@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Microsoft Teams平台完全手册](README.md)
-* [订阅和反馈](how-to-follow-update.md)
 
 ## Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
 
@@ -66,4 +65,8 @@
 * [基于Power Automate的流程自动化](power-platform-integration/power-automate-with-teams.md)
 * [设计和开发Power Virtual Agent机器人](power-platform-integration/power-virtual-agents-bot-with-teams.md)
 * [在Teams中使用Power BI进行数据分析](power-platform-integration/power-bi-with-teams.md)
+
+---
+
+* [订阅和反馈](how-to-follow-update.md)
 
