@@ -53,4 +53,5 @@
 * [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
 * [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
 * [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
+* [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
 
