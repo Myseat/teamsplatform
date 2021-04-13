@@ -53,6 +53,7 @@
 * [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
 * [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
 * [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
+* [通知功能实现方案](dev-team-perspective-of-the-platform/notification-solution-dev.md)
 * [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
 * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
 
