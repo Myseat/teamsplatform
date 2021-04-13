@@ -68,5 +68,5 @@
 
 ---
 
-* [订阅和反馈](how-to-follow-update.md)
+* [订阅更新、勘误和反馈](how-to-follow-update.md)
 
