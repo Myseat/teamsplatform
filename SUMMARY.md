@@ -57,6 +57,7 @@
 * [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
 * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
 * [PowerShell 模块](dev-team-perspective-of-the-platform/powershell-module.md)
+* [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
 * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
 ## 结合Power Platform  释放更大潜能
