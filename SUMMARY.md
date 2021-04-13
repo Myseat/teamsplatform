@@ -58,3 +58,7 @@
 * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
 * [PowerShell 模块](dev-team-perspective-of-the-platform/powershell-module.md)
 
+## 结合Power Platform  释放更大潜能
+
+* [Untitled](jie-he-power-platform-shi-fang-geng-da-qian-neng/untitled.md)
+
