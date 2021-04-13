@@ -52,4 +52,5 @@
 * [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)
 * [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
 * [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
+* [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
 
