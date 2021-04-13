@@ -9,6 +9,7 @@
 * [Teams 平台定位和架构](01-teamsplatform-overview/01-2-teamsplatform-architecture.md)
 * [平台能力一览](01-teamsplatform-overview/01-3-teamsplatform-capabilities/README.md)
   * [选项卡](01-teamsplatform-overview/01-3-teamsplatform-capabilities/01-3-1-tab-capability.md)
+  * [机器人](01-teamsplatform-overview/01-3-teamsplatform-capabilities/01-3-2-bot-capability.md)
 
 ## 第二章 <a id="chapter2"></a>
 
