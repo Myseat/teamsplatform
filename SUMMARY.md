@@ -45,3 +45,7 @@
 * [通过应用模板创建自定义应用](it-perspective-of-the-platform/app-template-usage.md)
 * [发布和管理企业应用](it-perspective-of-the-platform/publish-org-apps.md)
 
+## 从开发团队角度看平台 <a id="dev-team-perspective-of-the-platform"></a>
+
+* [Untitled](dev-team-perspective-of-the-platform/untitled.md)
+
