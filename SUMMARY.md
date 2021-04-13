@@ -65,4 +65,5 @@
 * [使用PowerApps 创建和分发创新应用](jie-he-power-platform-shi-fang-geng-da-qian-neng/use-powerapps-with-teams.md)
 * [基于Power Automate的流程自动化](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-automate-with-teams.md)
 * [设计和开发Power Virtual Agent机器人](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-virtual-agents-bot-with-teams.md)
+* [在Teams中使用Power BI进行数据分析](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-bi-with-teams.md)
 
