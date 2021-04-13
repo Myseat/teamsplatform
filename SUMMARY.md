@@ -61,4 +61,5 @@
 ## 结合Power Platform  释放更大潜能
 
 * [Power Platform 架构和设计理念](jie-he-power-platform-shi-fang-geng-da-qian-neng/powerplatform-overview.md)
+* [使用PowerApps 创建和分发创新应用](jie-he-power-platform-shi-fang-geng-da-qian-neng/use-powerapps-with-teams.md)
 
