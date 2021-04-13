@@ -60,5 +60,5 @@
 
 ## 结合Power Platform  释放更大潜能
 
-* [Untitled](jie-he-power-platform-shi-fang-geng-da-qian-neng/untitled.md)
+* [Power Platform 架构和设计理念](jie-he-power-platform-shi-fang-geng-da-qian-neng/powerplatform-overview.md)
 
