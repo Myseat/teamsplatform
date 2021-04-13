@@ -60,11 +60,11 @@
 * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
 * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
-## 结合Power Platform  释放更大潜能
+## 结合Power Platform  释放更大潜能 <a id="power-platform-integration"></a>
 
-* [Power Platform 架构和设计理念](jie-he-power-platform-shi-fang-geng-da-qian-neng/powerplatform-overview.md)
-* [使用PowerApps 创建和分发创新应用](jie-he-power-platform-shi-fang-geng-da-qian-neng/use-powerapps-with-teams.md)
-* [基于Power Automate的流程自动化](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-automate-with-teams.md)
-* [设计和开发Power Virtual Agent机器人](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-virtual-agents-bot-with-teams.md)
-* [在Teams中使用Power BI进行数据分析](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-bi-with-teams.md)
+* [Power Platform 架构和设计理念](power-platform-integration/powerplatform-overview.md)
+* [使用PowerApps 创建和分发创新应用](power-platform-integration/use-powerapps-with-teams.md)
+* [基于Power Automate的流程自动化](power-platform-integration/power-automate-with-teams.md)
+* [设计和开发Power Virtual Agent机器人](power-platform-integration/power-virtual-agents-bot-with-teams.md)
+* [在Teams中使用Power BI进行数据分析](power-platform-integration/power-bi-with-teams.md)
 
