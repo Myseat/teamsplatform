@@ -1,2 +1,2 @@
-# 使用PowerApps 创建和分发创新应用
+# 使用PowerApps 创建和分发应用
 

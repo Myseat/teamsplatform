@@ -61,10 +61,10 @@
 ## 结合Power Platform释放更大潜能 <a id="power-platform-integration"></a>
 
 * [Power Platform 架构和设计理念](power-platform-integration/powerplatform-overview.md)
-* [使用PowerApps 创建和分发创新应用](power-platform-integration/use-powerapps-with-teams.md)
-* [基于Power Automate的流程自动化](power-platform-integration/power-automate-with-teams.md)
-* [设计和开发Power Virtual Agent机器人](power-platform-integration/power-virtual-agents-bot-with-teams.md)
-* [在Teams中使用Power BI进行数据分析](power-platform-integration/power-bi-with-teams.md)
+* [使用PowerApps 创建和分发应用](power-platform-integration/use-powerapps-with-teams.md)
+* [基于Power Automate的自动化](power-platform-integration/power-automate-with-teams.md)
+* [Power Virtual Agent机器人应用](power-platform-integration/power-virtual-agents-bot-with-teams.md)
+* [在Teams中使用Power BI](power-platform-integration/power-bi-with-teams.md)
 
 ---
 
