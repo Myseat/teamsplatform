@@ -2,7 +2,7 @@
 * [序](preface-of-the-book.md)
 * [本书约定](convention-of-the-book.md)
 
-# Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
+## Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
 
 * [前言](teamsplatform-overview/preface.md)
 * [Microsoft Teams 及其发展过程](teamsplatform-overview/teams-roadmap.md)
