@@ -48,5 +48,5 @@
 ## 从开发团队角度看平台 <a id="dev-team-perspective-of-the-platform"></a>
 
 * [前言](dev-team-perspective-of-the-platform/preface.md)
-* [在Teams中进行DevOps实践](dev-team-perspective-of-the-platform/zai-teams-zhong-jin-hang-devops-shi-jian.md)
+* [在Teams中进行DevOps实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
 
