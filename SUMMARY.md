@@ -64,4 +64,5 @@
 * [Power Platform 架构和设计理念](jie-he-power-platform-shi-fang-geng-da-qian-neng/powerplatform-overview.md)
 * [使用PowerApps 创建和分发创新应用](jie-he-power-platform-shi-fang-geng-da-qian-neng/use-powerapps-with-teams.md)
 * [基于Power Automate的流程自动化](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-automate-with-teams.md)
+* [设计和开发Power Virtual Agent机器人](jie-he-power-platform-shi-fang-geng-da-qian-neng/power-virtual-agents-bot-with-teams.md)
 
