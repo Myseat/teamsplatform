@@ -42,5 +42,5 @@
 * [应用安装策略](it-perspective-of-the-platform/app-setup-policy.md)
 * [定义和分发团队模板](it-perspective-of-the-platform/define-team-template.md)
 * [使用量分析](it-perspective-of-the-platform/usage-analytics.md)
-* [Untitled](it-perspective-of-the-platform/untitled.md)
+* [通过应用模板创建自定义应用](it-perspective-of-the-platform/app-template-usage.md)
 
