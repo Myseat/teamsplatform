@@ -2,7 +2,7 @@
 
 * [Microsoft Teams平台完全手册](README.md)
 * [序言](preface-of-the-book.md)
-* [关注和订阅更新](how-to-follow-update.md)
+* [订阅和反馈](how-to-follow-update.md)
 
 ## Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
 
@@ -32,4 +32,10 @@
   * [任务计划和管理](user-perspective-of-the-platform/discover-install-teams-apps/tasks-managment.md)
   * [流程审核](user-perspective-of-the-platform/discover-install-teams-apps/workflow-approvals.md)
   * [内容管理](user-perspective-of-the-platform/discover-install-teams-apps/lists-content-management.md)
+* [典型行业应用场景](user-perspective-of-the-platform/scenrios-by-industries.md)
+
+## 从IT管理运营角度看平台 <a id="it-perspective-of-the-platform"></a>
+
+* [前言](it-perspective-of-the-platform/preface.md)
+* [规划Teams和推广路径](it-perspective-of-the-platform/plan-and-adoption.md)
 
