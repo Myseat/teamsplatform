@@ -60,7 +60,7 @@
 * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
 * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
-## 结合Power Platform  释放更大潜能 <a id="power-platform-integration"></a>
+## 结合Power Platform释放更大潜能 <a id="power-platform-integration"></a>
 
 * [Power Platform 架构和设计理念](power-platform-integration/powerplatform-overview.md)
 * [使用PowerApps 创建和分发创新应用](power-platform-integration/use-powerapps-with-teams.md)
