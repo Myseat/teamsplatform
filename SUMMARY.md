@@ -12,12 +12,24 @@
 * [平台能力一览](teamsplatform-overview/teamsplatform-capabilities/README.md)
   * [选项卡](teamsplatform-overview/teamsplatform-capabilities/teams-tab-overview.md)
   * [机器人](teamsplatform-overview/teamsplatform-capabilities/teams-bot-overview.md)
+  * [消息扩展](teamsplatform-overview/teamsplatform-capabilities/message-extension.md)
+  * [通知](teamsplatform-overview/teamsplatform-capabilities/notification.md)
+  * [自适应卡片](teamsplatform-overview/teamsplatform-capabilities/adaptive-card.md)
+  * [任务模块](teamsplatform-overview/teamsplatform-capabilities/task-module.md)
+  * [Microsoft Graph](teamsplatform-overview/teamsplatform-capabilities/microsoft-graph.md)
+  * [Power Platform整合](teamsplatform-overview/teamsplatform-capabilities/power-platform-integration.md)
 
-## 第二章 <a id="chapter2"></a>
+## 从最终用户角度看平台 <a id="user-perspective-of-the-platform"></a>
 
-* [前言](chapter2/teamplatform-usersview.md)
-* [第一节](chapter2/di-yi-jie.md)
-* [第二节](chapter2/di-er-jie/README.md)
-  * [Untitled](chapter2/di-er-jie/untitled-2.md)
-  * [Untitled](chapter2/di-er-jie/untitled.md)
+* [前言](user-perspective-of-the-platform/preface.md)
+* [安装和配置Teams](user-perspective-of-the-platform/install-configure-teams.md)
+* [基于会话的沟通协作](user-perspective-of-the-platform/chat-based-communcation-and-collaboration.md)
+* [音视频会议及其创新](user-perspective-of-the-platform/audio-video-meeting-scenarios.md)
+* [移动端体验](user-perspective-of-the-platform/mobile-device-experience.md)
+* [发现和安装应用](user-perspective-of-the-platform/discover-install-teams-apps/README.md)
+  * [信息收集或调查](user-perspective-of-the-platform/discover-install-teams-apps/information-collect-or-survey.md)
+  * [信息查询或分享](user-perspective-of-the-platform/discover-install-teams-apps/query-or-sharing-information.md)
+  * [任务计划和管理](user-perspective-of-the-platform/discover-install-teams-apps/tasks-managment.md)
+  * [流程审核](user-perspective-of-the-platform/discover-install-teams-apps/workflow-approvals.md)
+  * [内容管理](user-perspective-of-the-platform/discover-install-teams-apps/lists-content-management.md)
 
