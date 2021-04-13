@@ -38,4 +38,6 @@
 
 * [前言](it-perspective-of-the-platform/preface.md)
 * [规划Teams和推广路径](it-perspective-of-the-platform/plan-and-adoption.md)
+* [应用权限策略配置](it-perspective-of-the-platform/app-permission-policy.md)
+* [应用安装策略](it-perspective-of-the-platform/app-setup-policy.md)
 
