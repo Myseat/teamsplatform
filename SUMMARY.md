@@ -2,14 +2,14 @@
 
 * [Microsoft Teams平台宝典](README.md)
 
-## Microsoft Teams 平台概述 <a id="01-teamsplatform-overview"></a>
+## Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
 
-* [前言](01-teamsplatform-overview/qian-yan.md)
-* [Microsoft Teams 及其发展过程](01-teamsplatform-overview/01-1-teams-roadmap.md)
-* [Teams 平台定位和架构](01-teamsplatform-overview/01-2-teamsplatform-architecture.md)
-* [平台能力一览](01-teamsplatform-overview/01-3-teamsplatform-capabilities/README.md)
-  * [选项卡](01-teamsplatform-overview/01-3-teamsplatform-capabilities/01-3-1-tab-capability.md)
-  * [机器人](01-teamsplatform-overview/01-3-teamsplatform-capabilities/01-3-2-bot-capability.md)
+* [前言](teamsplatform-overview/preface.md)
+* [Microsoft Teams 及其发展过程](teamsplatform-overview/teams-roadmap.md)
+* [Teams 平台定位和架构](teamsplatform-overview/teamsplatform-architecture.md)
+* [平台能力一览](teamsplatform-overview/teamsplatform-capabilities/README.md)
+  * [选项卡](teamsplatform-overview/teamsplatform-capabilities/teams-tab-overview.md)
+  * [机器人](teamsplatform-overview/teamsplatform-capabilities/teams-bot-overview.md)
 
 ## 第二章 <a id="chapter2"></a>
 
