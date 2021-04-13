@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Microsoft Teams平台完全手册](README.md)
-* [序言](preface-of-the-book.md)
 * [订阅和反馈](how-to-follow-update.md)
 
 ## Microsoft Teams 平台概述 <a id="teamsplatform-overview"></a>
