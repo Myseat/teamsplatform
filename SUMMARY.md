@@ -1,6 +1,6 @@
 # Table of contents
 
-* [简介](README.md)
+* [Microsoft Teams 平台完全手册](README.md)
 * [序](preface-of-the-book.md)
 * [本书约定](convention-of-the-book.md)
 
