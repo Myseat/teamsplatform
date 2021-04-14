@@ -20,6 +20,8 @@ description: Microsoft Teams 平台完全手册
 4. 选择在线平台（Gitbook+Github）进行现代化的编写和版本管理
 5. 读者可以随时通过 [https://teamsplatform.code365.xyz](https://teamsplatform.code365.xyz) 跟踪本书进展，在手机上也能很方便阅读
 
+   > 本书主要用业余时间撰写，很可能需要几个月时间写完，敬请期待
+
 希望本书内容对大家有所帮助！
 
 陈 希章，2021年4月 于上海
