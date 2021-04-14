@@ -4,7 +4,7 @@
 
 > 你也可以直接搜索 `code365xyz` 这个微信号添加
 
-![                  &#x516C;&#x4F17;&#x53F7;&#x4E8C;&#x7EF4;&#x7801;](../.gitbook/assets/code365-qrcode.jpg)
+![                  &#x516C;&#x4F17;&#x53F7;&#x4E8C;&#x7EF4;&#x7801;](.gitbook/assets/code365-qrcode.jpg)
 
 如果发现有错误的地方，不管是文字还是代码的错误，请通过 [https://github.com/code365opensource/teamsplatform/issues](https://github.com/code365opensource/teamsplatform/issues) 这里给我提交issue。
 

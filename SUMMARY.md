@@ -3,6 +3,7 @@
 * [Microsoft Teams 平台完全手册](README.md)
 * [序](preface-of-the-book.md)
 * [本书约定](convention-of-the-book.md)
+* [订阅更新、勘误和反馈](how-to-follow-update.md)
 * [Microsoft Teams 平台概述](teams-platform-overview/README.md)
   * [Microsoft Teams 及其发展过程](teams-platform-overview/teams-roadmap.md)
   * [平台定位和架构](teams-platform-overview/teamsplatform-architecture.md)
@@ -53,8 +54,4 @@
   * [基于 Power Automate 的自动化](together-with-powerplatform/power-automate-with-teams.md)
   * [Power Virtual Agent 机器人应用](together-with-powerplatform/power-virtual-agents-bot-with-teams.md)
   * [在 Teams 中使用 Power BI](together-with-powerplatform/power-bi-with-teams.md)
-
-## 相关资源 <a id="resources-of-the-book"></a>
-
-* [订阅更新、勘误和反馈](resources-of-the-book/how-to-follow-update.md)
 
