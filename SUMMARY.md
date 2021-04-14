@@ -60,7 +60,7 @@
 * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
 * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
-## 结合 Power Platform 释放更大潜能 <a id="together-with-powerplatform"></a>
+## 结合Power Platform释放更大潜能 <a id="together-with-powerplatform"></a>
 
 * [结合 Power Platform 释放更大潜能](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng.md)
 * [Power Platform 架构和设计理念](together-with-powerplatform/powerplatform-overview.md)
