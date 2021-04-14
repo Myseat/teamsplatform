@@ -1,9 +1,15 @@
 # Table of contents
 
 * [Microsoft Teams 平台完全手册](README.md)
-* [序](preface-of-the-book.md)
-* [本书约定](convention-of-the-book.md)
-* [订阅更新、勘误和反馈](how-to-follow-update.md)
+
+## 本书简介和资源 <a id="resource-of-the-book"></a>
+
+* [序](resource-of-the-book/preface-of-the-book.md)
+* [本书约定](resource-of-the-book/convention-of-the-book.md)
+* [订阅更新、勘误和反馈](resource-of-the-book/how-to-follow-update.md)
+
+---
+
 * [Microsoft Teams 平台概述](teams-platform-overview/README.md)
   * [Microsoft Teams 及其发展过程](teams-platform-overview/teams-roadmap.md)
   * [平台定位和架构](teams-platform-overview/teamsplatform-architecture.md)
