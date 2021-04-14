@@ -16,8 +16,8 @@ description: Microsoft Teams 平台完全手册
 
 1. 从一开始就以书（而不是博客）的目标来写，在规划内容体系方面早下了一些功夫
 2. 请教了写作方面的专业人士，学习了一些好的写作经验和规范
-3. 选择在线平台（Gitbook+Github）进行现代化的编写版本管理
-4. 读者可以随时通过 [https://teamsplatform.code365.xyz](https://teamsplatform.code365.xyz) 看到本书进展，并且给与反馈
+3. 选择在线平台（Gitbook+Github）进行现代化的编写和版本管理
+4. 读者可以随时通过 [https://teamsplatform.code365.xyz](https://teamsplatform.code365.xyz) 跟踪本书进展，在手机上也能很方便阅读
 
 希望本书内容对大家有所帮助！
 
