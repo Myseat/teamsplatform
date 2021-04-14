@@ -45,23 +45,20 @@
 * [通过应用模板创建自定义应用](it-prespective-of-the-platform/app-template-usage.md)
 * [发布和管理企业应用](it-prespective-of-the-platform/publish-org-apps.md)
 
-## 从开发团队角度看平台 <a id="dev-team-perspective-of-the-platform"></a>
-
-* [从开发团队角度看平台](dev-team-perspective-of-the-platform/preface.md)
-* [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
-* [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)
-* [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
-* [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
-* [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
-* [通知功能实现方案](dev-team-perspective-of-the-platform/notification-solution-dev.md)
-* [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
-* [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
-* [PowerShell 模块](dev-team-perspective-of-the-platform/powershell-module.md)
-* [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
-* [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
-
 ---
 
+* [从开发团队角度看平台](dev-team-perspective-of-the-platform/README.md)
+  * [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
+  * [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)
+  * [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
+  * [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
+  * [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
+  * [通知功能实现方案](dev-team-perspective-of-the-platform/notification-solution-dev.md)
+  * [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
+  * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
+  * [PowerShell 模块](dev-team-perspective-of-the-platform/powershell-module.md)
+  * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
+  * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 * [结合Power Platform 释放更大潜能](together-with-powerplatform/README.md)
   * [Power Platform 架构和设计理念](together-with-powerplatform/powerplatform-overview.md)
   * [使用 PowerApps 创建和分发应用](together-with-powerplatform/use-powerapps-with-teams.md)
