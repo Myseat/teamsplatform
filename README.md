@@ -1,2 +1,2 @@
-# Microsoft Teams 平台完全手册
+# Microsoft Teams平台完全手册
 

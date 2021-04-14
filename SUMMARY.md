@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Microsoft Teams 平台完全手册](README.md)
+* [Microsoft Teams平台完全手册](README.md)
 
 ## 本书简介和资源 <a id="resource-of-the-book"></a>
 
