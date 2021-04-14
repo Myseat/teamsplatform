@@ -62,12 +62,12 @@
 
 ## 结合Power Platform释放更大潜能 <a id="together-with-powerplatform"></a>
 
-* [结合 Power Platform 释放更大潜能](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng.md)
-* [Power Platform 架构和设计理念](together-with-powerplatform/powerplatform-overview.md)
-* [使用 PowerApps 创建和分发应用](together-with-powerplatform/use-powerapps-with-teams.md)
-* [基于 Power Automate 的自动化](together-with-powerplatform/power-automate-with-teams.md)
-* [Power Virtual Agent 机器人应用](together-with-powerplatform/power-virtual-agents-bot-with-teams.md)
-* [在 Teams 中使用 Power BI](together-with-powerplatform/power-bi-with-teams.md)
+* [结合 Power Platform 释放更大潜能](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/README.md)
+  * [Power Platform 架构和设计理念](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/powerplatform-overview.md)
+  * [使用 PowerApps 创建和分发应用](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/use-powerapps-with-teams.md)
+  * [基于 Power Automate 的自动化](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/power-automate-with-teams.md)
+  * [Power Virtual Agent 机器人应用](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/power-virtual-agents-bot-with-teams.md)
+  * [在 Teams 中使用 Power BI](together-with-powerplatform/jie-he-power-platform-shi-fang-geng-da-qian-neng/power-bi-with-teams.md)
 
 ## 相关资源 <a id="resources-of-the-book"></a>
 
