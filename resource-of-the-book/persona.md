@@ -8,7 +8,7 @@
 
 为了本书写作的需要，我虚构了下面这样一家技术公司（Code365.xyz\)
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ## 人物
 
@@ -20,7 +20,7 @@
 
 他的账号是 oogway@code365.xyz
 
-![&#x5927;&#x5E08;&#xFF1A;&#x56E0;&#x4E3A;&#x76F8;&#x4FE1;&#xFF0C;&#x6240;&#x4EE5;&#x770B;&#x89C1;](../.gitbook/assets/image%20%285%29.png)
+![&#x5927;&#x5E08;&#xFF1A;&#x56E0;&#x4E3A;&#x76F8;&#x4FE1;&#xFF0C;&#x6240;&#x4EE5;&#x770B;&#x89C1;](../.gitbook/assets/image%20%286%29.png)
 
 ### 师傅
 
@@ -28,7 +28,7 @@
 
 他的账号是 master@code365.xyz
 
-![&#x5E08;&#x5085;&#xFF1A;&#x6311;&#x6218;&#x81EA;&#x6211;&#xFF0C;&#x6210;&#x4E3A;&#x66F4;&#x597D;&#x7684;&#x81EA;&#x5DF1;](../.gitbook/assets/image%20%284%29.png)
+![&#x5E08;&#x5085;&#xFF1A;&#x6311;&#x6218;&#x81EA;&#x6211;&#xFF0C;&#x6210;&#x4E3A;&#x66F4;&#x597D;&#x7684;&#x81EA;&#x5DF1;](../.gitbook/assets/image%20%282%29.png)
 
 ### 阿波
 
