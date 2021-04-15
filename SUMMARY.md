@@ -6,6 +6,7 @@
 
 * [序](resource-of-the-book/preface-of-the-book.md)
 * [本书约定](resource-of-the-book/convention-of-the-book.md)
+* [人物角色](resource-of-the-book/persona.md)
 * [订阅更新、勘误和反馈](resource-of-the-book/how-to-follow-update.md)
 
 ---
