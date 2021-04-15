@@ -22,7 +22,7 @@ description: 本书不代表微软官方意见
 
 > 如果是在网页端，默认情况下，Teams的语言会跟随浏览器语言切换，如果需要修改则使用 `Ctrl+Shift+，` 这个组合快捷键。
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ### 设置用户的默认语言
 
@@ -34,7 +34,7 @@ description: 本书不代表微软官方意见
 
 Visual Studio Code 默认不会跟随操作系统切换语言，而是需要单独安装中文语言包。
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ## 内容时效
 
