@@ -12,7 +12,7 @@
 ---
 
 * [Microsoft Teams 平台概述](teams-platform-overview/README.md)
-  * [Microsoft Teams 及其发展过程](teams-platform-overview/teams-roadmap.md)
+  * [Microsoft Teams 及其发展](teams-platform-overview/teams-roadmap.md)
   * [平台定位和架构](teams-platform-overview/teamsplatform-architecture.md)
   * [平台能力一览](teams-platform-overview/teamsplatform-capabilities/README.md)
     * [选项卡](teams-platform-overview/teamsplatform-capabilities/teams-tab-overview.md)

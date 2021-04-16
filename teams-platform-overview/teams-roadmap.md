@@ -1,2 +1,2 @@
-# Microsoft Teams 及其发展过程
+# Microsoft Teams 及其发展
 
