@@ -23,6 +23,7 @@
     * [任务模块](teams-platform-overview/teamsplatform-capabilities/task-module.md)
     * [Microsoft Graph](teams-platform-overview/teamsplatform-capabilities/microsoft-graph.md)
     * [Power Platform 整合](teams-platform-overview/teamsplatform-capabilities/power-platform-integration.md)
+  * [平台服务商要考虑的问题](teams-platform-overview/what-the-platform-provider-need-to-consider.md)
 * [从最终用户角度看平台](users-prespective-of-the-platform/README.md)
   * [安装和配置 Teams](users-prespective-of-the-platform/install-configure-teams.md)
   * [基于会话的沟通协作](users-prespective-of-the-platform/chat-based-communcation-and-collaboration.md)
