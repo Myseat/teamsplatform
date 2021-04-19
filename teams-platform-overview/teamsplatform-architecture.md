@@ -24,5 +24,9 @@ Bill 在演讲中提到，“如果没有Azure，我们根本无法交付Microso
 
 这些年微软全面拥抱开源，在Microsoft Teams 的开发过程中得到了明显的体现。从下图看到的Teams 客户端的架构中，大量地使用了开源技术和组件。值得注意的是，在构建这个客户端时，走了一些弯路，一开始是用Angular编写的前端，但现在已经花了一两年的时间要重构为React版本。
 
+Angular 和 React都很流行，但严格意义上他们并不是同一种东西，Angular是一个完整的框架，包括了MVC的全部实现，而React是一个视图库（View， UI Library），更加轻，更加具有灵活性吧。微软现在很多应用的前端（包括Office 365全系列），都大多使用React来编写，或者混合使用多种技术。这里 \([https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies) \) 有一篇介绍。
+
+使用React不仅仅是为了Teams自身开发的需要，也是为了后续集成其他应用（尤其是选项卡应用）的便捷性和标准化。这可能也是作为平台进行考虑的出发点。在后续小节我会详细地谈一些我的思考。
+
 ![](../.gitbook/assets/tu-pian-%20%285%29.png)
 
