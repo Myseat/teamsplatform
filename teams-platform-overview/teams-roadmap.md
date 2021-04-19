@@ -95,7 +95,7 @@ Microsoft Teams为团队而生，它天生具备的功能就包括了聊天，�
 
 首先要解决的问题在于，如何快速满足视频上课的场景。Microsoft Teams有视频会议的功能，这本身不是一个问题，问题在于学校的视频上课场景，跟企业视频会议的场景不一样。为了营造出来所有人都在教室，相互能看到彼此的氛围，这就要求所有人都能打开视频，并且最好同时都能显示出来。现有的功能是允许最多同时显示3\*3（一共9个）视频，这在企业开会的场景中大多是够用的。但学校上课要求更多。Microsoft Teams的产品团队决定调整现有的开发计划，把教育行业的这些需求列为高优先级，迎头赶上，在两三月内的时间，开发出来4\*4（一共16路视频），和7\*7（一共49路视频）等重要功能。
 
-![](../.gitbook/assets/tu-pian-.png)
+![](../.gitbook/assets/tu-pian-%20%281%29.png)
 
 下面这个发表于2020年6月份的文章，你可以看到多达20项，针对教育行业各类创新的介绍。
 
@@ -111,7 +111,7 @@ Microsoft Teams为团队而生，它天生具备的功能就包括了聊天，�
 
 关于NBA这个合作的详细信息，请参考官方文档 [https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/24/reimagining-teams-experience-basketball-microsoft-teams/](https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/24/reimagining-teams-experience-basketball-microsoft-teams/)（英文）。
 
-![](../.gitbook/assets/tu-pian-%20%281%29.png)
+![](../.gitbook/assets/tu-pian-%20%284%29.png)
 
 在2021年3月份举行的Microsoft Ignite大会上，Microsoft Teams 又发布了一系列新功能，你可以通过下面的链接了解详情。
 
