@@ -54,29 +54,48 @@ Microsoft Teams为团队而生，它天生具备的功能就包括了聊天，�
 
 为什么Microsoft Teams不把邮件的功能也整合进来呢？ 这是由于邮件这种沟通方式，和Microsoft Teams所主张的（也是业界目前推崇的）“基于对话的沟通”是两种不同的方式。邮件并没有过时，它仍然适合于很多正式的、私密性的沟通，包括内部和外部。但很多时候用邮件就会显得很臃肿并且麻烦，例如在团队讨论一个活动的安排，来来回回几十个邮件，沟通效率极低，甚至让人厌烦，你会觉得这种方式真的像远古时代的恐龙那样笨重。市场总是需要一些新的东西，主要是社会发展的需要（人类的沟通协作方式在发生肉眼可见的变化），另外一小部分是由于商业的需要。
 
-不去重复做已经有的东西，快速地把核心的框架和平台搭建起来，并且投放到市场去接受检验，并且快速地进行迭代开发，这就是Microsoft Teams 能成为微软历史上成长速度最快的应用的原因。下面简单回顾一下它面世以来的主要几个里程碑吧。
+不去重复做已经有的东西，快速地把核心的框架搭建起来，并且投放到市场去接受检验，并且快速地进行迭代开发，这就是Microsoft Teams 能成为微软历史上成长速度最快的应用的原因。
 
 > 关于Microsoft Teams 成为微软历史上成长速度最快的应用的说法，请参考官方文档 [https://pulse.microsoft.com/en/work-productivity-en/na/fa2-reasons-why-you-should-start-using-microsoft-teams-today/](https://pulse.microsoft.com/en/work-productivity-en/na/fa2-reasons-why-you-should-start-using-microsoft-teams-today/) 的第一段。
 
-## Teams 主要里程碑和路线图
+我很难说，一开始Microsoft Teams就是奔着做平台而去的，毕竟最开始的目标是要让这个应用能够成功，然后才能谈所谓的平台。但这种全新的开发方式（当然也是有赖于微软既有的这些成功的资产），某种程度上决定了Microsoft Teams有可能成长为一个平台。
 
-1. **2017年3月14日，Microsoft Teams 正式对全球客户可用。**当时的官方发布会邀请，你可以通过这里找到。[https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/](https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/)
-2. **2018年3月12日，微软发布Microsoft Teams一周年成绩单**：在这一年中，Teams 在新功能和客户使用量方面都取得了显着提升。现在，181 个市场的 20 万个组织和 39 种语言在使用 Teams，包括 A.P. Moller–Maersk、ConocoPhillips、通用汽车、梅西百货、NASCAR、Navistar、RLH Corporation 和 Technicolor。详情请参考 [https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/](https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/) 
-3. **2018年7月12日，微软发布免费版本的Microsoft Teams**。详情请参考 [https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592)。
+到底为什么它能如此快速成长呢，下面通过回顾一下它的主要里程碑，管中窥豹了解一下吧。
 
+## Microsoft Teams 主要里程碑
 
+万丈高楼平地起，在Microsoft Teams发布大约4年后的今天，我帮助大家梳理和回顾一下它的一些主要里程碑，从中或许可以看出一些规律。
+
+1. **2017年3月14日，Microsoft Teams 正式对全球客户可用。**当时的官方发布会邀请，你可以通过这里找到。[https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/](https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/) （英文）。
+2. 2017年6月，为教育用户而单独设计的Microsoft Teams 首次亮相。
+3. 2017年9月，使用人工智能技术优化的音视频会议体验推出。
+4. **2018年3月12日，微软发布Microsoft Teams一周年成绩单**：在这一年中，Teams 在新功能和客户使用量方面都取得了显着提升。现在，181 个市场的 20 万个组织和 39 种语言在使用 Teams，包括 A.P. Moller–Maersk、ConocoPhillips、通用汽车、梅西百货、NASCAR、Navistar、RLH Corporation 和 Technicolor。详情请参考 [https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/](https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/) 
+5. 2018年7月，政府专用版 Microsoft Teams 上线 （美国）。
+6. **2018年7月12日，微软发布免费版本的Microsoft Teams**。这个版本拥有几乎全部的功能，而且承诺永远不收费，秉持微软一贯的原则，不会有任何广告等额外的东西。免费版本的组织规模最多可以300人，另外在存储容量方面有一些限制，你可以在任何时候轻松升级到商业版。详情请参考 [https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592) （英文）。如果你想体验免费版，请参考Tony的一个文章：[https://tony-xia.github.io/free-teams-hands-on/](https://tony-xia.github.io/free-teams-hands-on/)。
+7. **2018年12月10日，据第三方独立机构（Spiceworks）进行的调查表明，Microsoft Teams 在市场占有率方面已经明显超过Slack**，从2016年的3%左右，上升到2018年底的21%，而Slack在两年多时间内的市场占有率仅从13%攀升到15%。数据表明，Office 365家族中的Skype for Business仍然占据主要的市场份额，约为44%。详情请参考 [https://community.spiceworks.com/blog/3157-business-chat-apps-in-2018-top-players-and-adoption-plans](https://community.spiceworks.com/blog/3157-business-chat-apps-in-2018-top-players-and-adoption-plans) \(英文）。
+8. 2019年1月，Microsoft Teams 增加了一系列针对一线工作者的功能。
+9. 2019年2月，Microsoft Teams 增加了一系列针对医疗服务场景的功能。
+10. **2019年7月，Microsoft Teams 的月度活跃用户数 （MAU\) 达到1300万**，并且延续了对Slack的竞争优势。详情请参考 [https://www.microsoft.com/en-us/microsoft-365/blog/2019/07/11/microsoft-teams-reaches-13-million-daily-active-users-introduces-4-new-ways-for-teams-to-work-better-together/](https://www.microsoft.com/en-us/microsoft-365/blog/2019/07/11/microsoft-teams-reaches-13-million-daily-active-users-introduces-4-new-ways-for-teams-to-work-better-together/) （英文）。
+11. 2019年11月，Microsoft Teams 的月度活跃用户数达到2000万。
+12. 2020年3月（三周年），Microsoft Teams 的月度活跃用户数达到4400万。官方有一个文章，请参考 [https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/19/microsoft-teams-3-everything-you-need-connect-teammates-be-more-productive/](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/19/microsoft-teams-3-everything-you-need-connect-teammates-be-more-productive/) （英文）。
+13. **2020年4月，在一个月左右的时间内，Microsoft Teams 的月度活跃用户数几乎翻倍增长，达到7500万。**[https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/30/2-years-digital-transformation-2-months/](https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/30/2-years-digital-transformation-2-months/) （英文）
+14. **2020年10月28日，Microsoft Teams的月度商业用户数 \(MAU\) 达到1.15亿。**详情请参考 [https://www.microsoft.com/en-us/microsoft-365/blog/2020/10/28/microsoft-teams-reaches-115-million-dau-plus-a-new-daily-collaboration-minutes-metric-for-microsoft-365/](https://www.microsoft.com/en-us/microsoft-365/blog/2020/10/28/microsoft-teams-reaches-115-million-dau-plus-a-new-daily-collaboration-minutes-metric-for-microsoft-365/) （英文）。
+
+从上面的路线图可以看出来，自面世以来，Microsoft Teams 在同Slack为首的外部产品，以及Skype for Business的内部产品竞争过程中，既依托和巩固既有的阵地，并且大胆地创新（尤其是在人工智能方面的发力），从2018年一举超越Slack后，一直稳步增长。而由于全球突然爆发的疫情，在2020年更是实现了井喷式的爆发，根据动态出现的各种各样的客户需求，快速地进行开发和发布，产品和平台经受住了考验，这方面我是亲身经历，感触特别深。下面我也想简单地总结一下在疫情期间的创新。
+
+## 疫情期间的创新
+
+在没有任何心理准备的情况下，2020年春节前后，全球爆发了新型冠状病毒的疫情，而且绝大部分人都想不到这次疫情会要持续这么久，直到现在这股阴云还笼罩在我们头顶。
+
+## 产品路线图
+
+Microsoft Teams 的开发采用的是互联网行业流行的敏捷开发和DevOps实践，几乎每月都有新的功能发布出来，并且通过一套成熟的机制推送给不同层（Ring）的用户。
 
 你可以随时通过 [https://www.microsoft.com/zh-cn/microsoft-365/roadmap?filters=Microsoft%20Teams](https://www.microsoft.com/zh-cn/microsoft-365/roadmap?filters=Microsoft%20Teams) 了解到Microsoft Teams的路线图。你也可以把这个地址 [https://www.microsoft.com/zh-cn/microsoft-365/RoadmapFeatureRSS/](https://www.microsoft.com/zh-cn/microsoft-365/RoadmapFeatureRSS/) 加入到RSS阅读器（例如Outlook），以便随时收到最新的功能通知。
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
 > 截图于 2021-4-19日
-
-## 疫情期间的创新
-
-
-
-
 
 这一小节给大家比较系统性地介绍了 Microsoft Teams 产生的背景，和Office 365现有产品之间的关系，以及一路发展的主要历程。接下来就来谈一谈从平台的角度来说，它是怎么设想和定位的。
 
