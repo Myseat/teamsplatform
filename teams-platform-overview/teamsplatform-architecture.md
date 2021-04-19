@@ -6,11 +6,11 @@
 
 {% embed url="https://techcommunity.microsoft.com/t5/microsoft-teams-events-blog/microsoft-ignite-live-blog-brk3215-microsoft-teams-architecture/ba-p/983346" %}
 
-Bill 在演讲中提到，“如果没有Azure，我们根本无法交付Microsoft Teams这个产品”。Microsoft Teams在全世界一百多个国家或地区同时提供服务，支持五十几种不同的语言，满足不同地区的安全合规要求，支持跨平台和终端设备。那么到底是什么样的架构才能支撑这种级别的应用服务呢？
+Microsoft Teams在全世界一百多个国家或地区同时提供服务，支持五十几种不同的语言，满足不同地区的安全合规要求，支持跨平台和终端设备。那么到底是什么样的架构才能支撑这种级别的应用服务呢？
 
 ## 基于Azure平台进行构建
 
-Microsoft Azure 是经过验证的成熟可靠的智能云平台，尤其在PaaS服务这个层面。Microsoft Teams在架构选型时优先考虑尽可能利用这些基础能力进行构建，使得它天生具备了安全合规，弹性可扩展，高可用性等特点，并且可以在极短的时间内就开发出来，投入市场。
+Bill 在演讲中提到，“如果没有Azure，我们根本无法交付Microsoft Teams这个产品”。Microsoft Azure 是经过验证的成熟可靠的智能云平台，尤其在PaaS服务这个层面。Microsoft Teams在架构选型时优先考虑尽可能利用这些基础能力进行构建，使得它天生具备了安全合规，弹性可扩展，高可用性等特点，并且可以在极短的时间内就开发出来，投入市场。
 
 ![](../.gitbook/assets/tu-pian-.png)
 
