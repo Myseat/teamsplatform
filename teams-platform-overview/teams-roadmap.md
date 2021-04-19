@@ -4,7 +4,7 @@ description: 微软历史上成长速度最快的应用
 
 # Microsoft Teams 及其发展
 
-## Teams 诞生的背景和战略意义
+## Microsoft Teams 诞生的背景和战略意义
 
 我在本书的序言中提到 Microsoft Teams 出现的一些背景信息。2016年左右，微软的Office 365 已经取得初步的成功，作为公司核心的三朵云之一，服务于越来越多的企业客户，包括很多从传统的Office Server，以及本地客户端升级过来的客户。
 
@@ -38,7 +38,7 @@ description: 微软历史上成长速度最快的应用
 
 我想，Microsoft Teams 就是在这样的大背景下诞生的。一方面，用户需要有更加现代的沟通协作体验，Skype for Business作为传统的企业级应用，功能相对有限无法满足用户的需求，也很难跟市场上新出现的一些对手做竞争。另外，Office 365有那么多服务，各种客户端，如何集中起来为用户提供平台服务，和Microsoft Graph搭档起来，从云+端（Cloud+Edge\) 两个角度形成一套完整的平台？这个使命，至少目前看来，是落在了Microsoft Teams身上了。
 
-## Teams 和Office 365其他产品的关系
+## Microsoft Teams 和Office 365其他产品的关系
 
 即便是如此，从Microsoft Teams 面世第一天开始，也伴随着各种疑问，其中被客户问的最多的问题就是：Office 365已经有Outlook，Skype for Business等全系列产品可以做沟通与协作，那么Teams 的具体定位是什么呢？
 
@@ -46,15 +46,31 @@ description: 微软历史上成长速度最快的应用
 
 Microsoft Teams为团队而生，它天生具备的功能就包括了聊天，音视频会议，以及共享文件和协作。作为一个现代版的工具，它也具备一定社交化的功能。这些功能和原先的Outlook，Skype for Business, SharePoint 和OneDrive，以及Yammer都有重叠。但是Teams 并不是重新开发这些功能，而是直接将他们整合进来，用户可以仅仅通过一个应用，即可以完成全方位的沟通和协作，除了收发邮件。
 
+下面这一张图进一步解释了这种关系
+
+![](../.gitbook/assets/image%20%2817%29.png)
+
+> 以上这张截图来自于官方文档 [https://techcommunity.microsoft.com/t5/microsoft-teams/new-teams-it-architecture-posters-published/m-p/480928](https://techcommunity.microsoft.com/t5/microsoft-teams/new-teams-it-architecture-posters-published/m-p/480928)，仅提供英文版本。链接网页中还有其他一些很有参考价值的架构图。
+
+为什么Microsoft Teams不把邮件的功能也整合进来呢？ 这是由于邮件这种沟通方式，和Microsoft Teams所主张的（也是业界目前推崇的）“基于对话的沟通”是两种不同的方式。邮件并没有过时，它仍然适合于很多正式的、私密性的沟通，包括内部和外部。但很多时候用邮件就会显得很臃肿并且麻烦，例如在团队讨论一个活动的安排，来来回回几十个邮件，沟通效率极低，甚至让人厌烦，你会觉得这种方式真的像远古时代的恐龙那样笨重。市场总是需要一些新的东西，主要是社会发展的需要（人类的沟通协作方式在发生肉眼可见的变化），另外一小部分是由于商业的需要。
+
+不去重复做已经有的东西，快速地把核心的框架和平台搭建起来，并且投放到市场去接受检验，并且快速地进行迭代开发，这就是Microsoft Teams 能成为微软历史上成长速度最快的应用的原因。下面简单回顾一下它面世以来的主要几个里程碑吧。
+
+> 关于Microsoft Teams 成为微软历史上成长速度最快的应用的说法，请参考官方文档 [https://pulse.microsoft.com/en/work-productivity-en/na/fa2-reasons-why-you-should-start-using-microsoft-teams-today/](https://pulse.microsoft.com/en/work-productivity-en/na/fa2-reasons-why-you-should-start-using-microsoft-teams-today/) 的第一段。
+
+## Teams 主要里程碑和路线图
+
+1. **2017年3月14日，Microsoft Teams 正式对全球客户可用。**当时的官方发布会邀请，你可以通过这里找到。[https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/](https://www.microsoft.com/en-us/microsoft-365/blog/2017/03/07/join-us-for-an-online-event-to-celebrate-the-global-availability-of-microsoft-teams/)
+2. **2018年3月12日，微软发布Microsoft Teams一周年成绩单**：在这一年中，Teams 在新功能和客户使用量方面都取得了显着提升。现在，181 个市场的 20 万个组织和 39 种语言在使用 Teams，包括 A.P. Moller–Maersk、ConocoPhillips、通用汽车、梅西百货、NASCAR、Navistar、RLH Corporation 和 Technicolor。详情请参考 [https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/](https://www.microsoft.com/zh-cn/microsoft-365/blog/2018/03/12/microsoft-teams-turns-1-advances-vision-for-intelligent-communications/) 
+3. **2018年7月12日，微软发布免费版本的Microsoft Teams**。详情请参考 [https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-a-free-version-of-microsoft-teams/ba-p/214592)。
 
 
 
+你可以随时通过 [https://www.microsoft.com/zh-cn/microsoft-365/roadmap?filters=Microsoft%20Teams](https://www.microsoft.com/zh-cn/microsoft-365/roadmap?filters=Microsoft%20Teams) 了解到Microsoft Teams的路线图。你也可以把这个地址 [https://www.microsoft.com/zh-cn/microsoft-365/RoadmapFeatureRSS/](https://www.microsoft.com/zh-cn/microsoft-365/RoadmapFeatureRSS/) 加入到RSS阅读器（例如Outlook），以便随时收到最新的功能通知。
 
-[https://techcommunity.microsoft.com/t5/microsoft-teams/new-teams-it-architecture-posters-published/m-p/480928](https://techcommunity.microsoft.com/t5/microsoft-teams/new-teams-it-architecture-posters-published/m-p/480928)
+![](../.gitbook/assets/image%20%2816%29.png)
 
-## Teams 发布以来的主要里程碑
-
-
+> 截图于 2021-4-19日
 
 ## 疫情期间的创新
 
