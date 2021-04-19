@@ -20,5 +20,9 @@ Bill 在演讲中提到，“如果没有Azure，我们根本无法交付Microso
 
 ![](../.gitbook/assets/tu-pian-%20%283%29.png)
 
+## 基于开源技术构建
 
+这些年微软全面拥抱开源，在Microsoft Teams 的开发过程中得到了明显的体现。从下图看到的Teams 客户端的架构中，大量地使用了开源技术和组件。值得注意的是，在构建这个客户端时，走了一些弯路，一开始是用Angular编写的前端，但现在已经花了一两年的时间要重构为React版本。
+
+![](../.gitbook/assets/tu-pian-%20%285%29.png)
 
