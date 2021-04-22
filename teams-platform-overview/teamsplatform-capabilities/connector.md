@@ -81,9 +81,11 @@ $headers.Add("Content-Type", "application/json")
 Invoke-RestMethod 'https://chinateamscommunity.webhook.office.com/webhookb2/7e79a292-3721-466b-af2d-e99af414393e@0aa03876-6fa6-4df8-9f90-a10f103dfd9a/IncomingWebhook/05ffa5f83d9b41a589bd1a1e97480b8a/f4883f2a-c2c4-47f5-b590-28a12cf053f8' -Method 'POST' -Headers $headers -InFile message.json
 ```
 
-
+很有趣并且也很简单，对吗？你可能已经发现，在使用Incoming webhook的方案中，没有做身份验证，也就是说，只要有这个地址，谁都可以推送消息。如果你想要做身份验证，则需要考虑这一节开头提到的订阅连接器的方案。
 
 ## **在客户端中发送消息给外部系统**
+
+\*\*\*\*
 
 
 
