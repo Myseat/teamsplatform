@@ -21,7 +21,17 @@ description: 在外部系统中集成Microsoft Teams
 
 以上提到这些场景，基本上都是可以通过Teams现有的界面手工地完成，但如果你站在每天要起降成百上千架飞机的航空公司的实际情况来看，就会发现人工来操作根本是不现实的。而通过 Microsoft Graph提供的接口，客户可以很方便地在现有的空管系统界面中，把上述的场景整合进去。通过这种无缝的整合，既可以发挥Microsoft Teams 作为终端用户日常沟通协作工具的优势，又可以把很多繁琐的创建、配置、维护、管理的工作自动化。
 
+这个案例中主要用到的Microsoft Graph场景和接口对应关系如下，请参考
 
+| 场景 | 接口 |
+| :--- | :--- |
+| 创建团队 | [https://docs.microsoft.com/zh-cn/graph/api/team-post?view=graph-rest-1.0&tabs=http](https://docs.microsoft.com/zh-cn/graph/api/team-post?view=graph-rest-1.0&tabs=http) |
+| 创建频道 | [https://docs.microsoft.com/zh-cn/graph/api/channel-post?view=graph-rest-1.0&tabs=http](https://docs.microsoft.com/zh-cn/graph/api/channel-post?view=graph-rest-1.0&tabs=http) |
+| 应用安装 | [https://docs.microsoft.com/zh-cn/graph/api/team-post-installedapps?view=graph-rest-1.0&tabs=http](https://docs.microsoft.com/zh-cn/graph/api/team-post-installedapps?view=graph-rest-1.0&tabs=http) |
+| 用户管理 | [https://docs.microsoft.com/zh-cn/graph/api/channel-post-members?view=graph-rest-1.0&tabs=http](https://docs.microsoft.com/zh-cn/graph/api/channel-post-members?view=graph-rest-1.0&tabs=http) |
+| 读取消息 | [https://docs.microsoft.com/zh-cn/graph/api/channel-list-messages?view=graph-rest-1.0](https://docs.microsoft.com/zh-cn/graph/api/channel-list-messages?view=graph-rest-1.0) |
+| 发送通知 | [https://docs.microsoft.com/zh-cn/graph/api/chatmessage-post?view=graph-rest-1.0](https://docs.microsoft.com/zh-cn/graph/api/chatmessage-post?view=graph-rest-1.0) |
+| 团队归档 | [https://docs.microsoft.com/zh-cn/graph/api/team-archive?view=graph-rest-1.0&tabs=http](https://docs.microsoft.com/zh-cn/graph/api/team-archive?view=graph-rest-1.0&tabs=http) |
 
 ## 扩展阅读
 
