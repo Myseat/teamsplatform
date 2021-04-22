@@ -15,7 +15,7 @@ Microsoft Teams 是设计用来作为现代办公的一个枢纽（Hub），这�
 
 连接器是专属频道的扩展功能，目前不支持针对个人，或者群聊，会议设置连接器。如果需要配置连接器，需要选择某个频道，然后在快捷菜单中选择 `连接器`。
 
-![](../../.gitbook/assets/tu-pian-%20%2839%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2841%29.png)
 
 ## 订阅外部系统的通知
 
@@ -27,11 +27,11 @@ Office 365的连接器，是基于 `订阅/发布` 这种架构来实现的，�
 
 同样的逻辑，现在也可以用到Microsoft Teams 里面来，目前已经有上百个按照Office 365 连接器规划做好的应用直接可以使用。例如下面这个例子是我们使用RSS 这个标准连接器，为某个频道订阅主题为 `Teams 平台` 的博客推送，并且要求它每6个小时推送一次。
 
-![](../../.gitbook/assets/tu-pian-%20%2832%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2833%29.png)
 
 完成配置后，用户可以在频道中看到相关的信息，并立即接收到第一次的推送（通常是10条内容），然后每隔一段时间（这里设置为6小时），用户又会收到最新的10条内容。
 
-![](../../.gitbook/assets/tu-pian-%20%2838%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2839%29.png)
 
 类似的场景还有非常多，例如研发团队希望接收Github或者DevOps系统中的事件通知，或者经理希望接收办公自动化（OA）系统的审批通知等。
 
@@ -45,13 +45,43 @@ Office 365 连接器的实现方案中，有一个关键的技术细节，就是
 
 这个实现方式，在Microsoft Teams中叫做 `Incoming webhook`, 中文也可以说 `传入钩子` 吧。
 
-![](../../.gitbook/assets/tu-pian-%20%2835%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2836%29.png)
 
 配置 Incoming Webhook 很容易，只需要提供一个名称和图标即可。
 
 ![](../../.gitbook/assets/tu-pian-%20%2830%29.png)
 
-这样你可以得到了一个URL, 你可以用任何熟悉的语言
+这样你可以得到了一个URL, 你可以用任何熟悉的语言用极少量的代码即可实现消息推送。例如下面我用PowerShell 做一个演示。请打开你电脑上面的PowerShell，修改下面代码中第5行的https开头的这个地址（改成你自己的Webhook地址），然后运行它。
+
+```text
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Content-Type", "application/json")
+$body = "{`"text`": `"<b>你好</b>，这是来自外部系统的一个推送消息, 你可以用HTML格式定义消息。<br /><br /><img src='https://plusrew.com/wp-content/uploads/2020/06/hero_msteams.jpg' /><br /> <p> <a href='https://teamsplatform.code365.xyz'>详情请参考 https://teamsplatform.code365.xyz/</a></p>`"}"
+$body = [System.Text.Encoding]::UTF8.GetBytes($body)
+Invoke-RestMethod 'https://chinateamscommunity.webhook.office.com/webhookb2/7e79a292-3721-466b-af2d-e99af414393e@0aa03876-6fa6-4df8-9f90-a10f103dfd9a/IncomingWebhook/05ffa5f83d9b41a589bd1a1e97480b8a/f4883f2a-c2c4-47f5-b590-28a12cf053f8' -Method 'POST' -Headers $headers -Body $body
+```
+
+你可以很快看到一个新的消息出现在频道中。
+
+![](../../.gitbook/assets/tu-pian-%20%2843%29.png)
+
+以上使用的消息格式是HTML的，灵活性很大，除了不能用脚本之外，一切都很好。如果你推送的消息，希望能让用户进行输入，并且提交数据，就可以利用到自适应卡片的技术了。下面是另外一个例子：
+
+![](../../.gitbook/assets/tu-pian-%20%2840%29.png)
+
+如果你想尝试这个例子，请下载下面这个范例文件
+
+{% file src="../../.gitbook/assets/message.json" caption="自适应卡片消息范例文件" %}
+
+然后在PowerShell运行下面的命令
+
+```text
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Content-Type", "application/json")
+Invoke-RestMethod 'https://chinateamscommunity.webhook.office.com/webhookb2/7e79a292-3721-466b-af2d-e99af414393e@0aa03876-6fa6-4df8-9f90-a10f103dfd9a/IncomingWebhook/05ffa5f83d9b41a589bd1a1e97480b8a/f4883f2a-c2c4-47f5-b590-28a12cf053f8' -Method 'POST' -Headers $headers -InFile message.json
+```
+
+
 
 ## **在客户端中发送消息给外部系统**
 
