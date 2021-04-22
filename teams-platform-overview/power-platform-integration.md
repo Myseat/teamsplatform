@@ -20,7 +20,8 @@ description: 在一起，更强大
 
 1. 可以提供服务，帮助客户更好地学习使用Power Platform。
 2. 可以通过Power Platform为客户定制解决方案，多快好省地完成项目。
-3. 可以基于Power Platform 开发行业性的解决方案，进行业务创新。
+3. 可以为Power Platform进行定制和开发，例如开发自定义的连接器、模板等，通过官方市场进行销售。
+4. 可以基于Power Platform 开发行业性的解决方案，进行业务创新。
 
 微软 Power Platform现在有中国版本，但目前仅包括三个组件（PowerBI，PowerApps，PowerAutomate），以及个别功能有差异，有兴趣可以参考 [https://docs.microsoft.com/zh-cn/power-platform/admin/business-applications-availability-china](https://docs.microsoft.com/zh-cn/power-platform/admin/business-applications-availability-china) 。但是由于Microsoft Teams目前还没有在中国市场落地，所以下面提到的两个平台的整合，指的是国际版本的整合。
 
