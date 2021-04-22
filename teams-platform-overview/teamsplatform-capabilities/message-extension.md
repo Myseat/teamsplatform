@@ -51,13 +51,25 @@ Microsoft Teams 及其同类产品，引领的是一个所谓的基于会话（C
 
 点击这个按钮，会出现一个快捷菜单，这里有一些内置的操作，包括保存消息，共享和翻译等，也支持第三方应用进行扩展，这些扩展出来的操作，会集中出现在 `更多操作` 这个二级菜单中。
 
-![](../../.gitbook/assets/tu-pian-%20%2830%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2831%29.png)
 
 通常这些自定义操作都会通过任务模块（Task Module）的形式弹出一个对话框，然后用预先定义好的自适应卡片（Adaptive Card）或者自定义的网页，收集用户的一些信息，并且在用户点击提交时完成后续的操作。下图是一个使用自适应卡片的例子。
 
-![](../../.gitbook/assets/tu-pian-%20%2831%29.png)
+![](../../.gitbook/assets/tu-pian-%20%2833%29.png)
 
 ## 自动对消息中的链接进行可视化
+
+除了上述两种用途（查询信息和执行操作）之外，消息扩展还有一个有意思的功能，是自动地消息中的链接进行可视化，以便让用户能更加直观地了解消息中的链接内容，即便是没有点击打开的情况下。
+
+值得说明的是，Microsoft Teams默认会尝试对链接（尤其是一个网页的话）进行解析，例如我想分享 [这个链接](https://docs.microsoft.com/zh-cn/microsoftteams/platform/messaging-extensions/how-to/action-commands/define-action-command) 给同事时，当我在消息框中输入或者粘贴时，几乎是立即它就被解析成下面这样。
+
+![](../../.gitbook/assets/tu-pian-%20%2832%29.png)
+
+这是怎么做到的呢？其实只要网页的源文件中包含了`og:title` 和 `og:description`和 og:image 就足够了，Teams 客户端会自动读取这三个属性，然后生成一个卡片。
+
+![](../../.gitbook/assets/tu-pian-%20%2830%29.png)
+
+如果你的链接不是一个简单的网页，
 
 
 
