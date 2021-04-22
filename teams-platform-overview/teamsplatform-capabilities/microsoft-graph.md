@@ -23,18 +23,19 @@ description: 在外部系统中集成Microsoft Teams
 
 
 
-## 扩展理解
+## 扩展阅读
 
 Microsoft Graph是一个宝库，客户和合作伙伴如果能掌握这个能力，将可以极大地调动包括Microsoft Teams在内的微软云端服务的能力为你所用，实现更多有高附加值的业务场景。
 
 本章不会对如何使用Microsoft Graph的细节进行展开，但提示如下的一些要点作为参考：
 
-1. Microsoft Graph 是一套统一的服务接口，不仅仅为 Microsoft Teams 服务。所有这些服务，都通过 https://graph.microsoft.com 这个地址对外提供服务。
+1. Microsoft Graph 是一套统一的服务接口，不仅仅为 Microsoft Teams 服务。所有这些服务，都通过 https://graph.microsoft.com 这个地址对外提供服务。请参考[https://docs.microsoft.com/zh-cn/graph/overview](https://docs.microsoft.com/zh-cn/graph/overview)。 
 
    > 中国版本的Microsoft 365（目前还不包含Microsoft Teams）也支持 Microsoft Graph，但它的服务地址是 [https://microsoftgraph.chinacloudapi.cn](https://microsoftgraph.chinacloudapi.cn)。
 
-2. Microsoft Graph 支持多种身份验证方式，它可以用当前登录的用户身份（以标准的OAuth认证流程实现），也可以用一个服务账号（用账号密码，或证书来做认证），不同的身份所对应的权限有细节的控制。
-3. Microsoft Graph 是一个标准的REST API，支持任意的开发平台和语言访问，微软官方也提供了一系列的SDK 甚至标准组件库以便加速开发。
+2. Microsoft Graph 支持多种身份验证方式，它可以用当前登录的用户身份（以标准的OAuth认证流程实现），也可以用一个服务账号（用账号密码，或证书来做认证），不同的身份所对应的权限有细节的控制。请参考 [https://docs.microsoft.com/zh-cn/graph/auth/](https://docs.microsoft.com/zh-cn/graph/auth/)。
+3. Microsoft Graph 是一个标准的REST API，支持任意的开发平台和语言访问，微软官方也提供了一系列的SDK 甚至标准组件库以便加速开发。请参考 [https://developer.microsoft.com/zh-cn/graph/gallery/?filterBy=Samples,SDKs](https://developer.microsoft.com/zh-cn/graph/gallery/?filterBy=Samples,SDKs) 。 
+4. Microsoft Graph还支持批量数据访问，以便对数据进行集中的收集、建模和分析。这个可以跟Azure有关的服务相结合来实现。请参考 [https://docs.microsoft.com/zh-cn/graph/data-connect-overview](https://docs.microsoft.com/zh-cn/graph/data-connect-overview)。
 
 
 
