@@ -130,8 +130,8 @@ Microsoft Teams 平台支持两个方向的定制或集成开发，分别是：
     <tr>
       <td style="text-align:left">Office 365&#x8FDE;&#x63A5;&#x5668;</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">&#x2714;</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
@@ -140,8 +140,8 @@ Microsoft Teams 平台支持两个方向的定制或集成开发，分别是：
     <tr>
       <td style="text-align:left">Incoming webhook</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">&#x2714;</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
