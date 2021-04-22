@@ -16,6 +16,10 @@ description: 在一起，更强大
 
 看起来很美好，对吗？所有人都可以进行开发！对于广大的客户来说，当然是一个好消息，一方面员工的潜能可以进一步释放出来，IT或内部研发 部门也不再疲于奔命地应付各个业务部门不断涌现的各种动态化的需求，而是可以把精力更多地花在管理平台、规划权限、数据建模和通用组件创新等方面。而Power Platform 相对灵活的授权方式，例如Office 365的部分现有用户（拥有E3或以上规格授权）默认就拥有使用Power Platform的授权，无疑对于公司更快地开始使用这个平台提供了可能。
 
+## 混合开发的时代
+
+
+
 对于合作伙伴来说，也有了更加广阔的发展空间，例如
 
 1. 可以提供服务，帮助客户更好地学习使用Power Platform。
@@ -25,7 +29,9 @@ description: 在一起，更强大
 
 微软 Power Platform现在有中国版本，但目前仅包括三个组件（PowerBI，PowerApps，PowerAutomate），以及个别功能有差异，有兴趣可以参考 [https://docs.microsoft.com/zh-cn/power-platform/admin/business-applications-availability-china](https://docs.microsoft.com/zh-cn/power-platform/admin/business-applications-availability-china) 。但是由于Microsoft Teams目前还没有在中国市场落地，所以下面提到的两个平台的整合，指的是国际版本的整合。
 
-## 在Teams中整合 Power Platform
+## Teams与 Power Platform整合
+
+
 
 
 
