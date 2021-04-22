@@ -16,9 +16,9 @@ description: 在一个地方接收不同来源的通知
 
 ![](../../.gitbook/assets/tu-pian-%20%2822%29.png)
 
-合法注册的Teams 应用都可以通过调用Microsoft Graph接口发送自己的通知，具体的开发细节会在后续章节中展开介绍。
-
 用户可以在客户端的设置界面中，控制通知的显示和频率。
 
 ![](../../.gitbook/assets/tu-pian-%20%2835%29.png)
+
+合法注册的Teams 应用都可以通过调用Microsoft Graph接口发送自己的通知，具体的开发细节会在后续章节中展开介绍。
 
