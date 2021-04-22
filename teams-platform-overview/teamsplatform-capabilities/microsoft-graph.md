@@ -47,7 +47,3 @@ Microsoft Graph是一个宝库，客户和合作伙伴如果能掌握这个能�
 3. Microsoft Graph 是一个标准的REST API，支持任意的开发平台和语言访问，微软官方也提供了一系列的SDK 甚至标准组件库以便加速开发。请参考 [https://developer.microsoft.com/zh-cn/graph/gallery/?filterBy=Samples,SDKs](https://developer.microsoft.com/zh-cn/graph/gallery/?filterBy=Samples,SDKs) 。 
 4. Microsoft Graph还支持批量数据访问，以便对数据进行集中的收集、建模和分析。这个可以跟Azure有关的服务相结合来实现。请参考 [https://docs.microsoft.com/zh-cn/graph/data-connect-overview](https://docs.microsoft.com/zh-cn/graph/data-connect-overview)。
 
-
-
-
-
