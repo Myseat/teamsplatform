@@ -26,9 +26,19 @@ Bill 在演讲中提到，“如果没有Azure，我们根本无法交付Microso
 
 Angular 和 React都很流行，但严格意义上他们并不是同一种东西，Angular是一个完整的框架，包括了MVC的全部实现，而React是一个视图库（View， UI Library），更加轻，更加具有灵活性吧。微软现在很多应用的前端（包括Office 365全系列），都大多使用React来编写，或者混合使用多种技术。这里 \([https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies) \) 有一篇介绍。
 
-使用React不仅仅是为了Teams自身开发的需要，也是为了后续集成其他应用（尤其是选项卡应用）的便捷性和标准化。这可能也是作为平台进行考虑的出发点。在后续小节我会详细地谈一些我的思考。
-
 ![](../.gitbook/assets/tu-pian-%20%285%29.png)
+
+## 组件化的应用架构
+
+使用React不仅仅是为了Teams自身开发的需要，也是为了后续集成其他应用（尤其是选项卡应用）的便捷性和标准化。这可能也是作为平台进行考虑的出发点。实际上，整个客户端就是由一个一个应用组合起来的，像搭积木一样。例如一般的用户登录Micrsooft Teams后默认能看到几个工具栏是“活动”，“聊天”，“团队”，“文件”，“日历”，“会议”等，
+
+![](../.gitbook/assets/tu-pian-%20%2827%29.png)
+
+其实这些都是因为默认情况下每个租户配置了这几个应用，换言之
+
+![](../.gitbook/assets/tu-pian-%20%2828%29.png)
+
+
 
 综上所述，在构建Microsoft Teams 平台时，产品组采取了明智的策略，即尽可能发挥自身的优势，利用现有的资产，使得这个应用乃至平台能够在冷启动的情况下，快速开发出来并进入市场，赢得了宝贵的时间。而拥抱开源则为平台后续的发展奠定了坚实的基础。这些都是很高层次的原则，接下来我们具体看一下Microsoft Teams平台提供的能力。
 
