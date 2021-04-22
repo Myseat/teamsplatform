@@ -2,7 +2,7 @@
 description: 在一个地方接收不同来源的通知
 ---
 
-# 通知
+# 通知 \(Notification\)
 
 
 
