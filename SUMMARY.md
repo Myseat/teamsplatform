@@ -18,7 +18,7 @@
     * [选项卡（Tab）](teams-platform-overview/teamsplatform-capabilities/teams-tab-overview.md)
     * [机器人（Bot）](teams-platform-overview/teamsplatform-capabilities/teams-bot-overview.md)
     * [消息扩展（Message extension）](teams-platform-overview/teamsplatform-capabilities/message-extension.md)
-    * [连接器](teams-platform-overview/teamsplatform-capabilities/connector.md)
+    * [连接器（Connector）](teams-platform-overview/teamsplatform-capabilities/connector.md)
     * [通知](teams-platform-overview/teamsplatform-capabilities/notification.md)
     * [Microsoft Graph](teams-platform-overview/teamsplatform-capabilities/microsoft-graph.md)
   * [Power Platform 整合](teams-platform-overview/power-platform-integration.md)
