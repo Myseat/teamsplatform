@@ -93,7 +93,7 @@ Outgoing webhook必须在团队级别配置，如下图所示
 
 ![](../../.gitbook/assets/tu-pian-%20%2835%29.png)
 
-你也可以用 [https://teamsplatform.free.beeceptor.com/api/cardmessage](https://teamsplatform.free.beeceptor.com/api/cardmessage) 这个由我创建的模拟的API进行测试。点击“创建” 按钮会出现下面的提示。目前我们暂时用不着，你直接点击“关闭”即可。
+你也可以用 [https://teamsplatform.free.beeceptor.com/api/cardmessage](https://teamsplatform.free.beeceptor.com/api/cardmessage) 这个由我创建的模拟的API进行测试。点击“创建” 按钮会出现下面的提示。这个是用来做安全验证的，目前我们暂时用不着，你直接点击“关闭”即可。
 
 > 如果你想测试返回标准文本消息，则用  [https://teamsplatform.free.beeceptor.com/api/textmessage](https://teamsplatform.free.beeceptor.com/api/textmessage) 这个地址进行配置即可。
 
