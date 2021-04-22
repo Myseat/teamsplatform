@@ -29,8 +29,12 @@ Microsoft Graph是一个宝库，客户和合作伙伴如果能掌握这个能�
 
 本章不会对如何使用Microsoft Graph的细节进行展开，但提示如下的一些要点作为参考：
 
-1. Microsoft Graph 是一套统一的服务接口，不仅仅为 Microsoft Teams 服务。
-2. Microsoft Graph 支持
+1. Microsoft Graph 是一套统一的服务接口，不仅仅为 Microsoft Teams 服务。所有这些服务，都通过 https://graph.microsoft.com 这个地址对外提供服务。
+
+   > 中国版本的Microsoft 365（目前还不包含Microsoft Teams）也支持 Microsoft Graph，但它的服务地址是 [https://microsoftgraph.chinacloudapi.cn](https://microsoftgraph.chinacloudapi.cn)。
+
+2. Microsoft Graph 支持多种身份验证方式，它可以用当前登录的用户身份（以标准的OAuth认证流程实现），也可以用一个服务账号（用账号密码，或证书来做认证），不同的身份所对应的权限有细节的控制。
+3. Microsoft Graph 是一个标准的REST API，支持任意的开发平台和语言访问，微软官方也提供了一系列的SDK 甚至标准组件库以便加速开发。
 
 
 
