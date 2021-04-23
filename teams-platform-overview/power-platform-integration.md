@@ -50,7 +50,7 @@ description: 在一起，更强大
 
 Teams 与 Power Platform的整合是双向的。首先看，从Teams的角度，怎么整合 Power Platform。
 
-Power Platform 四个组件，现在在 Teams中都有原生的应用，如下图所示：
+Power Platform 四个组件，现在在 Teams中都有原生的应用，这也就是说，用户可以一站式地访问到所有这些组件，而不需要记住很多个网址，或者单独安装多个应用。
 
 ![](../.gitbook/assets/tu-pian-%20%2849%29.png)
 
