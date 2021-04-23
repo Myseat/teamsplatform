@@ -52,15 +52,15 @@ Teams 与 Power Platform的整合是双向的。首先看，从Teams的角度，
 
 Power Platform 四个组件，现在在 Teams中都有原生的应用，这也就是说，用户可以一站式地访问到所有这些组件，而不需要记住很多个网址，或者单独安装多个应用。
 
-![](../.gitbook/assets/tu-pian-%20%2849%29.png)
+![](../.gitbook/assets/tu-pian-%20%2850%29.png)
 
 所有这些组件，都专门针对Teams做了专门的设计，而不是简单地把原先的应用主页嵌入进来。例如如果你打开Power Automate这个应用，它就会自动地推荐跟Microsoft Teams有关的模板。
 
-![](../.gitbook/assets/tu-pian-%20%2850%29.png)
+![](../.gitbook/assets/tu-pian-%20%2851%29.png)
 
 另外，在Power Platform四大组件的背后，其实有一个非常重要的概念，就是通用数据模型（Common Data Model），现在改名为 Dataverse，它可以说是平台的灵魂，在不同组件之间可以共享数据。而Dataverse是按照环境（Environment）的概念来做为管理边界的。当用户第一次在Teams中使用以上四个组件的任何一个时，会自动创建一个专门的环境，所有针对Teams 开发的应用，流程等，都会统一放在这个环境中。
 
-
+![](../.gitbook/assets/tu-pian-%20%2849%29.png)
 
 
 
