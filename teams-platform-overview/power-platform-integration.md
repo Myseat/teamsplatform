@@ -35,6 +35,8 @@ description: 在一起，更强大
 1. **软件开发不是特权，而是一种基本能力**。所有人都可以开发自己想要的软件，不管你是专业开发人员，还是普通的业务用户。
 2. **未来的软件系统，是多种技术方案的混合体**。典型的场景是，一些重要的后台服务，会用到精妙的算法，按需扩展的架构等；而前端的界面，既可以是现有的Office界面，也可以是用户自己画的一个应用。
 
+> 值得引起重视
+
 ## Power Platform 对合作伙伴的价值
 
 对于合作伙伴来说，也有了更加广阔的发展空间，例如
@@ -48,13 +50,61 @@ description: 在一起，更强大
 
 ## Teams与 Power Platform整合
 
-Teams 与 Power Platform的整合是双向的。首先看，从Teams的角度，怎么整合 Power Platform。
+Teams 与 Power Platform的整合是双向的。首先看看从Power Platform角度是怎么跟Teams整合的。
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x5E94;&#x7528;</th>
+      <th style="text-align:left">&#x6574;&#x5408;&#x70B9;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Power Apps</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x5BFC;&#x51FA;PowerApps&#x5E94;&#x7528;&#x4E3A;Teams&#x5E94;&#x7528;&#xFF0C;&#x53EF;&#x4F5C;&#x4E3A;&#x4E2A;&#x4EBA;&#x5E94;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x56E2;&#x961F;&#x5E94;&#x7528;</li>
+          <li>&#x5728;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7279;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x8BFB;&#x53D6;&#x5230;&#x5F53;&#x524D;Teams&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;</li>
+          <li>&#x9488;&#x5BF9;Teams&#x73AF;&#x5883;&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Power Automate</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;Teams&#x7684;&#x4E8B;&#x4EF6;&#xFF08;&#x4F8B;&#x5982;&#x6536;&#x5230;&#x67D0;&#x4EBA;&#x7684;&#x6D88;&#x606F;&#xFF09;&#x542F;&#x52A8;&#x6D41;&#x7A0B;</li>
+          <li>&#x5728;&#x6D41;&#x7A0B;&#x4E2D;&#x5BF9;Teams&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#x521B;&#x5EFA;&#x56E2;&#x961F;&#xFF0C;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7B49;</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Power BI</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4E00;&#x952E;&#x5206;&#x4EAB;&#x62A5;&#x8868;&#x6216;&#x53EF;&#x89C6;&#x5316;&#x5143;&#x7D20;&#x5230;Teams
+            &#x5BF9;&#x8BDD;&#x4E2D;</li>
+          <li>&#x81EA;&#x52A8;&#x94FE;&#x63A5;&#x5730;&#x5740;&#x89E3;&#x6790;</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Power Virtual Agents</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4E00;&#x952E;&#x5B8C;&#x6210;&#x673A;&#x5668;&#x4EBA;&#x4E0E;Teams&#x7684;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Power Platform 四个组件，现在在 Teams中都有原生的应用，这也就是说，用户可以一站式地访问到所有这些组件，而不需要记住很多个网址，或者单独安装多个应用。
 
 ![](../.gitbook/assets/tu-pian-%20%2850%29.png)
 
-所有这些组件，都专门针对Teams做了专门的设计，而不是简单地把原先的应用主页嵌入进来。例如如果你打开Power Automate这个应用，它就会自动地推荐跟Microsoft Teams有关的模板。
+所有这些组件，都专门针对Teams做了专门的设计，而不是简单地把原先的应用主页嵌入进来。例如如果你打开Power Automate这个应用，它就会自动地推荐跟Microsoft Teams有关的模板，这里开发好的应用、流程、报表、机器人，都可以一键部署到Teams中。
 
 ![](../.gitbook/assets/tu-pian-%20%2851%29.png)
 
@@ -62,7 +112,5 @@ Power Platform 四个组件，现在在 Teams中都有原生的应用，这也�
 
 ![](../.gitbook/assets/tu-pian-%20%2849%29.png)
 
-
-
-
+我们有理由相信，Teams和Power Platform这两个强大的平台的结合，将极大的释放所有用户的生产力，并且引领行业前进和发展。
 
