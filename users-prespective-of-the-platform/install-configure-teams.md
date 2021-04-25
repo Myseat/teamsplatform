@@ -14,13 +14,13 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 你的账号格式通常就是你在公司的邮箱地址，例如 **master@code365.xyz** 就是师傅的账号。任何时候，你可以通过 [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) 这个地址查看账号并对其进行配置。
 
-![](../.gitbook/assets/tu-pian-%20%2886%29.png)
+![](../.gitbook/assets/tu-pian-%20%2888%29.png)
 
 ### 修改密码
 
 截至目前为止，绝大部分人还是依赖密码来保护账号的安全。如果你依赖密码，养成定期修改的习惯是比较好的。点击上图的 ”更改密码“ 按钮随时可以修改密码。
 
-![](../.gitbook/assets/tu-pian-%20%2883%29.png)
+![](../.gitbook/assets/tu-pian-%20%2885%29.png)
 
 ### 启用多因子身份认证
 
@@ -28,7 +28,7 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 启用多因子身份认证并不难，请点击 "安全信息” 这个页面，然后点击 ”添加方法“ 即可。
 
-![](../.gitbook/assets/tu-pian-%20%2879%29.png)
+![](../.gitbook/assets/tu-pian-%20%2881%29.png)
 
 微软和其他行业合作伙伴正在推进一个全新的方案，就是无代码身份验证，目前这个功能已经在Azure AD中可以预览，有兴趣的朋友可以参考[ https://aka.ms/gopasswordless ](%20https://aka.ms/gopasswordless%20)了解。
 
@@ -76,7 +76,7 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 > 如果是在网页客户端中，快捷键是 `Ctrl + Shift +,`
 
-![](../.gitbook/assets/tu-pian-%20%2878%29.png)
+![](../.gitbook/assets/tu-pian-%20%2880%29.png)
 
 这里经常会进行配置的有**语言**选项，**通知**选项，以及**设备**选项。例如我特别喜欢的一个开关是“噪声抑制”，很多时候我们远程办公，将这个选项设置为 “高” 可有效屏蔽掉开会期间周围的背景声音。
 
@@ -96,11 +96,11 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 > 因为中国区的Microsoft 365还没有包含Teams，所以中国区在2021年7月之后，Skype for Business还是可以继续使用的。但中国区的Skype for Business用户，无法跟国际版的Teams用户进行聊天。
 
-![](../.gitbook/assets/tu-pian-%20%2876%29.png)
+![](../.gitbook/assets/tu-pian-%20%2878%29.png)
 
 **第三种情况是，双方都已经在使用Teams，但是相互之间不允许沟通**（要么是你的公司进行了设置，要么是他们公司进行了设置）。这种情况下，你根本查找不到这个用户，更别说是发消息给他了。
 
-![](../.gitbook/assets/tu-pian-%20%2888%29.png)
+![](../.gitbook/assets/tu-pian-%20%2890%29.png)
 
 
 
