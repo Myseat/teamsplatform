@@ -74,7 +74,9 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 通过点击Teams客户端右上角头像的下拉菜单中的“选项”按钮或者通过快捷键 `Ctrl+，`可以快速打开Teams客户端配置界面。
 
-> 如果是在网页客户端中，快捷键是 `Ctrl + Shift +,`
+{% hint style="info" %}
+如果是在网页客户端中，快捷键是 `Ctrl + Shift +,` 
+{% endhint %}
 
 ![](../.gitbook/assets/tu-pian-%20%2880%29.png)
 
@@ -88,13 +90,17 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 **第一种情况是，双方都已经在使用 Teams，并且允许相互进行沟通**。这是绝大部分时候默认的情况。双方可以愉快的聊天，包括发送表情，以及预约会议。出于安全考虑，双方不能直接分享文件。
 
-> 这里提到的 “在使用Teams”，准确地说，是指该用户在后台已经配置为 “Teams Only”这种模式。
+{% hint style="info" %}
+这里提到的 “在使用Teams”，准确地说，是指该用户已经配置为 “Teams Only”这种模式。
+{% endhint %}
 
 ![](../.gitbook/assets/tu-pian-%20%2864%29.png)
 
 **第二种情况是，对方还在使用Skype for Business。这种情况下，只有在对方主动发起聊天时你能进行回复，但是你无法主动地发送消息给他**。这种模式（Teams + Skype for Business），我们称之为混合模式。Skype for Business 会在2021年7月正式退役，现在绝大部分的客户，已经完成或即将完成从Skype for Business到Teams的迁移，相信以后类似的问题就不会遇到了。
 
-> 因为中国区的Microsoft 365还没有包含Teams，所以中国区在2021年7月之后，Skype for Business还是可以继续使用的。但中国区的Skype for Business用户，无法跟国际版的Teams用户进行聊天。
+{% hint style="warning" %}
+中国区的Microsoft 365还没有包含Teams，所以在2021年7月之后，Skype for Business还是可以继续使用的。但中国区的Skype for Business用户，无法跟国际版的Teams用户进行聊天。
+{% endhint %}
 
 ![](../.gitbook/assets/tu-pian-%20%2878%29.png)
 
