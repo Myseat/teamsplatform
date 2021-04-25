@@ -4,7 +4,7 @@
 
 ## 本书简介和资源 <a id="resource-of-the-book"></a>
 
-* [序](resource-of-the-book/preface-of-the-book.md)
+* [作者自序](resource-of-the-book/preface-of-the-book.md)
 * [本书约定](resource-of-the-book/convention-of-the-book.md)
 * [人物角色](resource-of-the-book/persona.md)
 * [订阅更新、勘误和反馈](resource-of-the-book/how-to-follow-update.md)
@@ -24,7 +24,8 @@
   * [Power Platform 整合](teams-platform-overview/power-platform-integration.md)
 * [从最终用户角度看平台](users-prespective-of-the-platform/README.md)
   * [安装和配置 Teams](users-prespective-of-the-platform/install-configure-teams.md)
-  * [基于会话的沟通协作](users-prespective-of-the-platform/chat-based-communcation-and-collaboration.md)
+  * [作为来宾加入其他组织](users-prespective-of-the-platform/join-or-quit-other-orgs-as-guest.md)
+  * [基于聊天的沟通协作](users-prespective-of-the-platform/chat-based-communcation-and-collaboration.md)
   * [音视频会议及其创新](users-prespective-of-the-platform/audio-video-meeting-scenarios.md)
   * [移动端体验](users-prespective-of-the-platform/mobile-device-experience.md)
   * [发现和安装应用](users-prespective-of-the-platform/discover-install-teams-apps/README.md)
