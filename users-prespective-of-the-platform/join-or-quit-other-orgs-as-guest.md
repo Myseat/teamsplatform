@@ -8,25 +8,29 @@ description: 进退有据、有礼、有节
 
 ## 作为来宾加入其他组织
 
-![](../.gitbook/assets/tu-pian-%20%2882%29.png)
+我此前有一份文档专门介绍这方面的内容
+
+{% file src="../.gitbook/assets/2-microsoft-teams-de-wai-bu-fang-wen-he-lai-bin-fang-wen-ares-chen.pdf" caption="来宾和外部用户" %}
+
+![](../.gitbook/assets/tu-pian-%20%2886%29.png)
 
 当你的账号（可以是合法的Office 365账号，也可以是任意的邮箱地址）被其他公司作为来宾邀请加入时，会收到下面这样的一封邮件通知。
 
-![](../.gitbook/assets/tu-pian-%20%2866%29.png)
+![](../.gitbook/assets/tu-pian-%20%2867%29.png)
 
 点击邮件正文中的 “ 打开Microsoft Teams ” 按钮后，会看到如下的界面
 
 
 
-![](../.gitbook/assets/tu-pian-%20%2871%29.png)
+![](../.gitbook/assets/tu-pian-%20%2874%29.png)
 
 点击 “接受“ 按钮完成操作。此时，请留意你的Teams客户端的右上角，头像旁边的位置。除了显示你当前所在的组织，还会看到你以来宾身份加入过的组织列表。
 
-![](../.gitbook/assets/tu-pian-%20%2874%29.png)
+![](../.gitbook/assets/tu-pian-%20%2877%29.png)
 
 选择其中任意一个，你就可以用来宾身份进入对方的组织了，请看下面的效果。
 
-![](../.gitbook/assets/tu-pian-%20%2865%29.png)
+![](../.gitbook/assets/tu-pian-%20%2866%29.png)
 
 你的头像会跟你在自己的组织略有不同，出于保护隐私的考虑，你的个人头像会隐藏，你也仅能看到那些你作为来宾身份加入的团队。在团队的醒目位置，会显示出来当前的团队是包含来宾用户的。
 
@@ -36,25 +40,25 @@ description: 进退有据、有礼、有节
 
 进一步说，对方尝试打开你的联系人卡片时，默认只能看到最基本的信息，就是你的邮箱（这个他本来就知道的），他无法查看你的组织结构等隐私信息。
 
-![](../.gitbook/assets/tu-pian-%20%2880%29.png)
+![](../.gitbook/assets/tu-pian-%20%2884%29.png)
 
 作为来宾，你却拥有比普通的“外部用户” 更多的权力，例如完整的聊天体验，文件共享，以及使用更多Teams应用。你甚至可以在对方的组织内编辑文档（这个需要额外设置）。
 
-![](../.gitbook/assets/tu-pian-%20%2855%29.png)
+![](../.gitbook/assets/tu-pian-%20%2856%29.png)
 
 当你所加入的外部组织的相关团队中有新的消息，或者有人 @ 了你，你也都会收到通知。
 
-![](../.gitbook/assets/tu-pian-%20%2864%29.png)
+![](../.gitbook/assets/tu-pian-%20%2865%29.png)
 
 ## 添加外部用户为来宾
 
 如果你需要把外部联系人添加为来宾，你可以在当前所在的团队中右侧”..." 菜单中选择 “添加成员” 操作。
 
-![](../.gitbook/assets/tu-pian-%20%2878%29.png)
+![](../.gitbook/assets/tu-pian-%20%2882%29.png)
 
 输入对方的邮箱地址，并且选择 ”将xxxxx 添加为访客“ 这个选项
 
-![](../.gitbook/assets/tu-pian-%20%2860%29.png)
+![](../.gitbook/assets/tu-pian-%20%2861%29.png)
 
 作为普通用户，你只有一次机会修改该联系人在自己组织内的显示名称，请点击下图中这个笔状图标，然后输入你希望的显示名称信息，打勾后，点击右侧的 “添加”按钮完成。
 
@@ -62,11 +66,11 @@ description: 进退有据、有礼、有节
 如果你在添加完来宾后还想修改他的显示名称，你需要联系贵公司的管理员，在Azure Active Directory中进行操作。
 {% endhint %}
 
-![](../.gitbook/assets/tu-pian-%20%2875%29.png)
+![](../.gitbook/assets/tu-pian-%20%2879%29.png)
 
 同一个外部联系人账号，只需要添加一次就会成为在你公司租户中的固定来宾，下次如果你（或者你的同事）想要添加他时，会看到如下的界面。
 
-![](../.gitbook/assets/tu-pian-%20%2856%29.png)
+![](../.gitbook/assets/tu-pian-%20%2857%29.png)
 
 你可以在任何时候从你的团队中将某个来宾删除，他将无法继续访问你的团队。但是你无法将他从你公司的来宾列表中删除。如果需要那么做，你还是得联系贵公司的IT管理员。
 
@@ -76,7 +80,7 @@ description: 进退有据、有礼、有节
 
 请导航到 [https://myaccount.microsoft.com/organizations](https://myaccount.microsoft.com/organizations) 查看你当前所属于的组织列表。
 
-![](../.gitbook/assets/tu-pian-%20%2883%29.png)
+![](../.gitbook/assets/tu-pian-%20%2887%29.png)
 
 找到你需要离开的组织，点击 “离开组织” 按钮，然后按照提示操作即可。
 

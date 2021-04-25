@@ -14,13 +14,13 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 你的账号格式通常就是你在公司的邮箱地址，例如 **master@code365.xyz** 就是师傅的账号。任何时候，你可以通过 [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) 这个地址查看账号并对其进行配置。
 
-![](../.gitbook/assets/tu-pian-%20%2879%29.png)
+![](../.gitbook/assets/tu-pian-%20%2883%29.png)
 
 ### 修改密码
 
 截至目前为止，绝大部分人还是依赖密码来保护账号的安全。如果你依赖密码，养成定期修改的习惯是比较好的。点击上图的 ”更改密码“ 按钮随时可以修改密码。
 
-![](../.gitbook/assets/tu-pian-%20%2876%29.png)
+![](../.gitbook/assets/tu-pian-%20%2880%29.png)
 
 ### 启用多因子身份认证
 
@@ -28,7 +28,7 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 启用多因子身份认证并不难，请点击 "安全信息” 这个页面，然后点击 ”添加方法“ 即可。
 
-![](../.gitbook/assets/tu-pian-%20%2873%29.png)
+![](../.gitbook/assets/tu-pian-%20%2876%29.png)
 
 微软和其他行业合作伙伴正在推进一个全新的方案，就是无代码身份验证，目前这个功能已经在Azure AD中可以预览，有兴趣的朋友可以参考[ https://aka.ms/gopasswordless ](%20https://aka.ms/gopasswordless%20)了解。
 
@@ -46,7 +46,7 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 在上图中点击 左侧“应用和设备” 的菜单，或者直接导航到 [https://portal.office.com/account/?ref=MeControl\#installs](https://portal.office.com/account/?ref=MeControl#installs) 可以看到下面的内容。点击红色按钮 “安装Office”即可。
 
-![](../.gitbook/assets/tu-pian-%20%2854%29.png)
+![](../.gitbook/assets/tu-pian-%20%2855%29.png)
 
 ### 独立安装Teams 客户端
 
@@ -54,7 +54,7 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 值得一提的是，如果你想在安卓手机上安装官方的Teams应用，请务必参考网页底部的如下说明。
 
-![](../.gitbook/assets/tu-pian-%20%2853%29.png)
+![](../.gitbook/assets/tu-pian-%20%2854%29.png)
 
 
 
@@ -76,11 +76,11 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 > 如果是在网页客户端中，快捷键是 `Ctrl + Shift +,`
 
-![](../.gitbook/assets/tu-pian-%20%2872%29.png)
+![](../.gitbook/assets/tu-pian-%20%2875%29.png)
 
 这里经常会进行配置的有**语言**选项，**通知**选项，以及**设备**选项。例如我特别喜欢的一个开关是“噪声抑制”，很多时候我们远程办公，将这个选项设置为 “高” 可有效屏蔽掉开会期间周围的背景声音。
 
-![](../.gitbook/assets/tu-pian-%20%2862%29.png)
+![](../.gitbook/assets/tu-pian-%20%2863%29.png)
 
 ### 和外部联系人聊天
 
@@ -90,17 +90,17 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 > 这里提到的 “在使用Teams”，准确地说，是指该用户在后台已经配置为 “Teams Only”这种模式。
 
-![](../.gitbook/assets/tu-pian-%20%2861%29.png)
+![](../.gitbook/assets/tu-pian-%20%2862%29.png)
 
 **第二种情况是，对方还在使用Skype for Business。这种情况下，只有在对方主动发起聊天时你能进行回复，但是你无法主动地发送消息给他**。这种模式（Teams + Skype for Business），我们称之为混合模式。Skype for Business 会在2021年7月正式退役，现在绝大部分的客户，已经完成或即将完成从Skype for Business到Teams的迁移，相信以后类似的问题就不会遇到了。
 
 > 因为中国区的Microsoft 365还没有包含Teams，所以中国区在2021年7月之后，Skype for Business还是可以继续使用的。但中国区的Skype for Business用户，无法跟国际版的Teams用户进行聊天。
 
-![](../.gitbook/assets/tu-pian-%20%2870%29.png)
+![](../.gitbook/assets/tu-pian-%20%2873%29.png)
 
 **第三种情况是，双方都已经在使用Teams，但是相互之间不允许沟通**（要么是你的公司进行了设置，要么是他们公司进行了设置）。这种情况下，你根本查找不到这个用户，更别说是发消息给他了。
 
-![](../.gitbook/assets/tu-pian-%20%2881%29.png)
+![](../.gitbook/assets/tu-pian-%20%2885%29.png)
 
 
 
