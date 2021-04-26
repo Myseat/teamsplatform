@@ -52,15 +52,19 @@ Microsoft Teams 本身并不是一个独立销售的产品，而是作为Microso
 
 如果你只想单独安装Teams客户端，请导航到 [https://www.microsoft.com/zh-cn/microsoft-teams/download-app](https://www.microsoft.com/zh-cn/microsoft-teams/download-app) 然后按需下载安装包。
 
-值得一提的是，如果你想在安卓手机上安装官方的Teams应用，请务必参考网页底部的如下说明。
+值得一提的是，如果你想在安卓手机上安装官方的Teams应用，请务必参考网页底部的如下说明或者点击 [https://docs.microsoft.com/zh-cn/microsoftteams/get-teams-android-in-china](https://docs.microsoft.com/zh-cn/microsoftteams/get-teams-android-in-china) 进行扫码安装。
 
 ![](../.gitbook/assets/tu-pian-%20%2854%29.png)
 
+关于在不同平台安装的说明，请参考如下链接
 
+{% embed url="https://docs.microsoft.com/zh-cn/microsoftteams/get-clients\#web-client" %}
 
 ### 通过IT 集中安装和部署
 
 还有一些方法可以实现在公司内部的集中安装和部署，但超出了本章的范围。在第三章会有所介绍。
+
+
 
 ## 配置Teams 客户端
 
