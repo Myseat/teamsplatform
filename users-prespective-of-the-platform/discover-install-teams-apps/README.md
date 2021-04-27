@@ -12,12 +12,12 @@ description: 用积木搭起来你自己的Teams
 
 | 应用名称（英文） | 版本 | 描述 |
 | :--- | :--- | :--- |
-| **Activity** | 1.0 | 活动 |
+| **Activity**  | 1.0 | 活动 |
 | **Calling** | 1.0 | 呼叫 |
 | **Teams** | 1.0 | 团队 |
 | Saved | 1.0 | 已保存 |
 | **Files** | 1.0 | 文件 |
-| **Chat** | 1.0 | 会话 |
+| **Chat**  | 1.0 | 会话 |
 | **Search** | 1.0 | 搜索 |
 | **Calendar** | 1.0 | 日程 |
 | Power Automate Actions | 1.0.2 | Power Automate流程组件 |
@@ -45,15 +45,25 @@ description: 用积木搭起来你自己的Teams
 
 {% file src="../../.gitbook/assets/apps.json" caption="默认安装的应用列表" %}
 
+## 搜索应用并安装
+
+
+
+## 为什么我找不到某个应用
 
 
 
 
-如何搜索和安装应用
 
-如何为自己上传应用
+## 为我自己上传应用
 
-如何提交给管理员
+
+
+## 提交一个应用
+
+
+
+
 
 
 
