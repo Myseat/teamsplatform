@@ -56,6 +56,10 @@ description: 让远程工作更加自信、自然、自如
 
 ![](../.gitbook/assets/tu-pian-%20%2860%29.png)
 
+同样的贴心提醒也会出现在移动端，如下图所示：
+
+![](../.gitbook/assets/tu-pian-%20%2897%29.png)
+
 
 
 关于Microsoft Teams的创新是过去一年的重点，在2021年3月份举行的Microsoft Ignite大会上，产品组集中展示了所有这些有意思的功能，有兴趣请参考官方公告。
