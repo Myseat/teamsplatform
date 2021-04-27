@@ -29,6 +29,7 @@
   * [音视频会议及其创新](users-prespective-of-the-platform/audio-video-meeting-scenarios.md)
   * [移动端体验](users-prespective-of-the-platform/mobile-device-experience.md)
   * [发现和安装应用](users-prespective-of-the-platform/discover-install-teams-apps.md)
+  * [使用Power Apps开发自定义应用](users-prespective-of-the-platform/shi-yong-power-apps-kai-fa-zi-ding-yi-ying-yong.md)
 * [从 IT 管理运营角度看平台](it-prespective-of-the-platform/README.md)
   * [规划 Teams 和推广路径](it-prespective-of-the-platform/plan-and-adoption.md)
   * [应用权限策略配置](it-prespective-of-the-platform/app-permission-policy.md)
