@@ -50,10 +50,4 @@
   * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
   * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
   * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
-* [结合Power Platform 释放更大潜能](together-with-powerplatform/README.md)
-  * [Power Platform 架构和设计理念](together-with-powerplatform/powerplatform-overview.md)
-  * [使用 PowerApps 创建和分发应用](together-with-powerplatform/use-powerapps-with-teams.md)
-  * [基于 Power Automate 的自动化](together-with-powerplatform/power-automate-with-teams.md)
-  * [Power Virtual Agent 机器人应用](together-with-powerplatform/power-virtual-agents-bot-with-teams.md)
-  * [在 Teams 中使用 Power BI](together-with-powerplatform/power-bi-with-teams.md)
 
