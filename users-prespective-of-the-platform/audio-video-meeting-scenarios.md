@@ -58,7 +58,7 @@ description: 让远程工作更加自信、自然、自如
 
 同样的贴心提醒也会出现在移动端，如下图所示：
 
-![](../.gitbook/assets/tu-pian-%20%28100%29.png)
+![](../.gitbook/assets/tu-pian-%20%28102%29.png)
 
 
 
