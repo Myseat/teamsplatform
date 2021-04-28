@@ -16,11 +16,27 @@ description: 任何人都可以是开发者
 
 如果你有相关的使用授权，这一节我将用一个完整的故事，带领大家体验一下Power Platform的四个核心组件，你不需要写一行代码，也能开发自己的自定义应用、自动化流程，并且基于业务数据进行分析，还可以定制一个问答机器人呢。
 
-## 开发一个收集数据的自定义应用
+## 开发一个用于客户回访的自定义应用
 
-阿波和团队小伙伴经常需要去拜访客户进行回访，他们需要把相关的客户反馈记录起来，并且在团队内部很好的共享。以前是用Excel文件来做这样的事情，每次都要邮件来回发送，合并文档也很麻烦，同时最要命的是，在手机上基本上编辑的体验真的太痛苦了。阿波想自己开发一个简单的应用来解决这个问题。他听说Power Apps很容易上手，只要定义一下所需要的业务数据，就可以快速生成应用。那就开始吧。
+阿波和团队小伙伴经常需要去拜访客户进行回访，他们需要把相关的客户反馈记录起来，并且在团队内部很好的共享。以前是用Excel文件来做这样的事情，每次都要邮件来回发送，合并文档也很麻烦，同时最要命的是，在手机上基本上编辑的体验真的太痛苦了。阿波想自己开发一个简单的应用来解决这个问题。他听说Power Apps很容易上手，只要定义一下所需要的业务数据，就可以快速生成应用。
 
-首先，按照上一节的提示，在Teams里面安装 ”Power Apps“ 这个应用。
+基于Power Apps 开发新型应用，是一种无代码开发的新方式。**一般来说，在开始之前，你只要把数据保存在哪里，以及具体需要哪些数据想清楚就可以了。**至于到底怎么设计界面，以及如何实现数据的增删改查，工具可以帮你事半功倍。
+
+在一些简单的业务场景，你可以利用SharePoint自带的列表来保存数据。例如阿波定义了下面这样一个列表来爆粗你客户回访记录。这个列表有五个字段：
+
+1. **客户名称**。这个列从默认的“标题”列改名而来，必填项。
+2. **回访日期**。日期类型，默认填写为当天日期。
+3. **操作员**。人员类型，可以搜索来输入，确保是合法的员工信息。
+4. **客户反馈**。文本类型。
+5. **整体评价**。单选项，有高、中、低三个选项。
+
+{% hint style="info" %}
+这个列表最好建立在某个团队所对应的SharePoint网站中，这样的话，所有团队中的用户就默认拥有了访问的权限，不需要额外的进行授权了。
+{% endhint %}
+
+![](../.gitbook/assets/tu-pian-%20%28156%29.png)
+
+接下来，回到Teams，阿波按照上一节的提示，在Teams里面安装 ”Power Apps“ 这个应用。
 
 ![](../.gitbook/assets/tu-pian-%20%28113%29.png)
 
@@ -36,19 +52,23 @@ description: 任何人都可以是开发者
 
 ![](../.gitbook/assets/tu-pian-%20%28131%29.png)
 
-为应用起一个名字后，点击”保存“按钮，进入下一步，会是一个空白的应用界面。阿波需要定义客户回访所需的数据结构，所以他点击了 ”创建新表“ 这个按钮。
+为应用起一个名字后，点击”保存“按钮，进入下一步，会是一个空白的应用界面。接下来可以按照下图所示的步骤添加SharePoint 列表作为数据源。
 
-![](../.gitbook/assets/tu-pian-%20%28122%29.png)
+![](../.gitbook/assets/tu-pian-%20%28155%29.png)
 
-在弹出的”创建表“ 对话框中，输入名称然后点击 ”创建“ 按钮，会看到一个弹出来的详细定义数据字段的界面，如下所示。
+接下来把这个数据源跟PowerApps默认生成的界面连接起来。请按照下图所示进行操作。
 
-![](../.gitbook/assets/tu-pian-%20%2897%29.png)
+![](../.gitbook/assets/tu-pian-%20%28157%29.png)
 
-默认情况下，只有一个字段，叫”名称“，你可以点击字段右侧的 下箭头图标，修改名称或其他属性。然后点击表格标题行最右边的加号（+）按钮，增加新的列。阿波定义的客户回访记录这个表包含了五个字段，其中回访时间是 ”日期“ 类型的，整体满意度 是可选的。关闭这个定义表的窗口后，PowerApps会自动刷新，并且根据阿波定义的结构，生成一个应用界面。
+接下来把字段放在界面上来，这将最终完成数据源的对接。如下图所示。
 
-![](../.gitbook/assets/tu-pian-%20%28114%29.png)
+![](../.gitbook/assets/tu-pian-%20%28148%29.png)
 
-无需做任何修改，点击右上方的 ”预览“ 按钮，可以立即对这个应用进行访问，输入并查看数据。
+你已经看到自动生成的操作界面了，美中不足的是第一个字段，它的标题默认为Title。你可以通过下面的方法修改它为“客户名称”。
+
+![](../.gitbook/assets/tu-pian-%20%28140%29.png)
+
+一个简单的应用就这样做成了。点击工具栏中的 ”预览“ 按钮，可以立即对这个应用进行访问，输入并查看数据，如下图所示。
 
 ![](../.gitbook/assets/tu-pian-%20%28104%29.png)
 
@@ -61,7 +81,7 @@ description: 任何人都可以是开发者
 ![](../.gitbook/assets/tu-pian-%20%28100%29.png)
 
 {% hint style="info" %}
-这里的General，指的是每个团队默认的那个频道。在中文版本中，叫做常规（例如下图所示）。但在一些界面又没有完全翻译好。
+这里的General，指的是每个团队默认的那个频道。在中文版本中，叫做常规（例如下图所示）。但在这个界面又没有完全翻译好。
 {% endhint %}
 
 PowerApps 会自动列出当前团队中所有的频道，阿波选择将这个应用作为第一个频道的选项卡添加进去。点击上图所指示的加号，并且点击”保存并关闭“后，阿波切换到对应的团队和频道，发现已经多出来一个选项卡”客户回访登记“，点击进入后，阿波和他的小伙伴可以很方便地进行数据填写和浏览了。
@@ -72,7 +92,7 @@ PowerApps 会自动列出当前团队中所有的频道，阿波选择将这个�
 
 ![](../.gitbook/assets/tu-pian-%20%28127%29.png)
 
-开发并发布这个 ”客户回访登记“ 应用的过程，阿波一路点击按钮走下来，没有编写哪怕一行代码，前后大概用了五分钟的时间。默认生成的这个应用带有完整的新增数据，修改数据，浏览数据（列表），以及删除数据等功能，可谓是麻雀虽小，五脏俱全。
+开发并发布这个 ”客户回访登记“ 应用的过程，阿波一路点击按钮走下来，没有编写哪怕一行代码，前后大概用了十分钟的时间。默认生成的这个应用带有完整的新增数据，修改数据，浏览数据（列表），以及删除数据等功能，可谓是麻雀虽小，五脏俱全。
 
 你可能会说，是不是还可以增加更多有意思的功能啊？例如自动用当前用户的名字填到”操作员“ 这个字段中去，以及控制用户能看所有人的数据，但只能改自己提交的数据？我能不能修改界面的布局？...... 完全没有问题，而且同样不难实现。但讲解这些细节就超出了本书的范围，你可以通过下面的官方文档稍作学习以便掌握。
 
@@ -80,11 +100,120 @@ PowerApps 会自动列出当前团队中所有的频道，阿波选择将这个�
 
 ## 在收到客户的差评时引起重视
 
-师傅在看了阿波的演示后，感到非常高兴，并且提出一个小的要求，如果某个客户的整体满意度是”低“的话，他希望得到一个
+师傅在看了阿波的演示后，感到非常高兴，并且提出一个小小的要求，如果某个客户的整体满意度是”低“的话，他希望得在团队频道中用消息形式发送一个通知给他，并且通过 @ 他提醒他。
+
+利用Power Automate，可以监测小伙伴们提交回访记录的事件，并且通过条件判断（整体反馈是否为“低”），决定是否给师傅发送通知消息。
+
+阿波在Teams中，搜索并安装 “Power Automate”这个应用。
 
 ![](../.gitbook/assets/tu-pian-%20%28107%29.png)
 
-## 数据分析不求人
+安装成功后打开的主页，默认把列出了团队现有的流程，以及常见的Teams相关的流程模板。
+
+![](../.gitbook/assets/tu-pian-%20%28147%29.png)
+
+点击上图中红色框出的这个模板，阿波开始第一个自己的流程设计。
+
+![](../.gitbook/assets/tu-pian-%20%28138%29.png)
+
+输入一个易于理解的“流名称”，并确认登录后，点击“继续”按钮进入下一步。
+
+![](../.gitbook/assets/tu-pian-%20%28145%29.png)
+
+在这个对话框中，选择对应的信息，然后点击 ”创建流“ 按钮完成操作。
+
+接下来，阿波尝试通过之前创建的应用提交了一个客户回访记录，如下图所示。
+
+![](../.gitbook/assets/tu-pian-%20%28143%29.png)
+
+提交了这个记录后，不一会儿阿波在常规频道中看到了一个消息，如下图所示。
+
+![](../.gitbook/assets/tu-pian-%20%28144%29.png)
+
+看起来流程已经在工作了，但这并不是师傅所需要的。他希望通过一个更加直观的消息通知他，并且要能@他以便引起重视，这样的需求如何实现呢？阿波可以回到Power Automate 应用的主页，对这个流程进行定制。
+
+![](../.gitbook/assets/tu-pian-%20%28153%29.png)
+
+点击”客户回访-差评通知师傅“ 这个流程，进入详情页面。
+
+![](../.gitbook/assets/tu-pian-%20%28159%29.png)
+
+点击 ”编辑“ 按钮，进入编辑视图。
+
+![](../.gitbook/assets/tu-pian-%20%28132%29.png)
+
+这里有两个设计好的组件，第一个是用来触发流程的，第二个则是用来给频道发送卡片消息的。在当前这个场景，我们可以把第二个组件删除掉，并且点击 ”新步骤“ 添加需要的步骤。下图是最终的版本，包含了一个条件判断（条件是“整体评价 value” 等于 “低”），然后在左侧分支中，用了一个“在聊天或频道中发布消息” 的步骤。
+
+![](../.gitbook/assets/tu-pian-%20%28152%29.png)
+
+保存这个流程后，再次保存新的客户回访记录时，根据条件会触发如下的通知。
+
+![](../.gitbook/assets/tu-pian-%20%28136%29.png)
+
+看起来不错吧，上面的例子基于HTML格式定义，还可以用一个自适应卡片来自定义消息。设计这个流程又花了阿波十分钟左右，如果你根据上面的截图，还无法完成自己的流程，那么请抽一点时间学习一些入门知识，你值得拥有。
+
+{% embed url="https://docs.microsoft.com/zh-cn/power-automate/getting-started" %}
+
+## 透过数据发现信息，快速建模分析
+
+阿波的工作取得了很好的进展，得到了师傅和小伙伴们的一致表扬，大家都逐渐习惯了直接在Teams中随时随地填写客户回访记录。很快这个列表的数据就越来越多了，阿波遇到一个新的挑战，就是如何快速在对这些数据进行分析，例如看看按月统计的回访量的变化，好中差评的分布，各个小伙伴们的工作负荷等。他想到了Power BI来进行这项工作。
+
+{% hint style="warning" %}
+对于一些简单的部门级应用，将数据直接放在SharePoint列表（甚至Excel文件）是一个非常好的方案，因为你不需要了解负责的数据库知识。但是要注意，Excel文件在多人并发时可能遇到一些限制，而SharePoint列表的条目数不建议超过5000，如果你预计数据量将持续增长会超过这个规模，建议提前做好相关数据库方面的考虑，或者直接用Power Platform的Dataverse这个服务。详情请参考 [https://powerplatform.microsoft.com/zh-cn/dataverse/](https://powerplatform.microsoft.com/zh-cn/dataverse/) 。
+{% endhint %}
+
+![](../.gitbook/assets/tu-pian-%20%28142%29.png)
+
+你可以有多种方式使用Power BI。目前在Teams中也有一个专门的Power BI的应用，但这个应用还在完善之中，不能直接连接到SharePoint数据源。所以本例中，我建议大家用 Power BI Desktop进行报表开发和设计，然后发布到Power BI Service，并最终在Teams中进行展现。
+
+首先，请在这里（[https://powerbi.microsoft.com/zh-cn/desktop/](https://powerbi.microsoft.com/zh-cn/desktop/)）下载Power BI Desktop, 然后启动它，并用你的账号登录。
+
+![](../.gitbook/assets/tu-pian-%20%28139%29.png)
+
+选择 ”获取数据“，在下拉菜单中选择 ”更多...“
+
+![](../.gitbook/assets/tu-pian-%20%28146%29.png)
+
+选择”联机服务“中的 ”SharePoint Online 列表“，点击”连接“ 按钮进入下一步
+
+![](../.gitbook/assets/tu-pian-%20%28137%29.png)
+
+输入你的SharePoint网站地址，然后点击 ”确定“按钮
+
+![](../.gitbook/assets/tu-pian-%20%28135%29.png)
+
+选择 ”Microsoft 账号“，并且以你当前用户身份登录，然后点击 ”连接“按钮
+
+![](../.gitbook/assets/tu-pian-%20%28141%29.png)
+
+选择 ”客户回访记录“ 这个列表，然后点击 ”转换数据“， 对数据源进行一定的加工。
+
+![](../.gitbook/assets/tu-pian-%20%28154%29.png)
+
+在这个转换数据的窗口，我们会删除掉很多不相干的字段，并且对”回访日期“的数据类型进行设置，以及对操作员这个字段进行一个条件格式处理，因为默认提供的值是一个id，而不是用户的姓名。
+
+这里的步骤很多，我很难一步一步地截图，如果你不知道如何操作，可以点击下图中的 ”高级编辑器“ 按钮
+
+![](../.gitbook/assets/tu-pian-%20%28158%29.png)
+
+对照下面我提供的代码，你从第三行开始复制，粘贴到你的编辑器里面。
+
+```text
+let
+    Source = SharePoint.Tables("https://chinateamscommunity.sharepoint.com/sites/msteams_7d1b2b/", [Implementation=null, ApiVersion=15]),
+    #"37da01c3-068c-4177-b1fe-172751eaf4eb" = Source{[Id="37da01c3-068c-4177-b1fe-172751eaf4eb"]}[Items],
+    #"Renamed Columns" = Table.RenameColumns(#"37da01c3-068c-4177-b1fe-172751eaf4eb",{{"ID", "ID.1"}}),
+    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns",{"FileSystemObjectType", "Id", "ContentTypeId", "ServerRedirectedEmbedUri", "ServerRedirectedEmbedUrl", "ID.1", "Title", "Modified", "Created", "AuthorId", "EditorId", "OData__UIVersionString", "Attachments", "GUID", "ComplianceAssetId", "OData_回访日期", "OData_操作员Id", "操作员StringId", "OData_客户反馈", "OData_整体评价", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "ContentType", "GetDlpPolicyTip", "FieldValuesAsHtml", "FieldValuesAsText", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Author", "Editor", "OData_操作员"}),
+    #"Removed Columns" = Table.RemoveColumns(#"Reordered Columns",{"FileSystemObjectType", "Id", "ContentTypeId", "ServerRedirectedEmbedUri", "ServerRedirectedEmbedUrl", "ID.1", "Modified", "Created", "AuthorId", "EditorId", "OData__UIVersionString", "Attachments", "GUID", "ComplianceAssetId", "FirstUniqueAncestorSecurableObject", "RoleAssignments", "AttachmentFiles", "操作员StringId", "ContentType", "GetDlpPolicyTip", "FieldValuesAsHtml", "FieldValuesAsText", "FieldValuesForEdit", "File", "Folder", "LikedByInformation", "ParentList", "Properties", "Versions", "Author", "Editor", "OData_操作员"}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Removed Columns",{{"OData_回访日期", type date}}),
+    #"Added Conditional Column" = Table.AddColumn(#"Changed Type", "操作员", each if [OData_操作员Id] = 10 then "师傅" else if [OData_操作员Id] = 12 then "阿波" else if [OData_操作员Id] = 13 then "大师" else if [OData_操作员Id] = 14 then "虎妞" else null)
+in
+    #"Added Conditional Column"
+```
+
+修改完数据定义后，点击下图中的 ”关闭并应用“这个按钮以便回到报表设计界面。
+
+![](../.gitbook/assets/tu-pian-%20%28150%29.png)
 
 
 
