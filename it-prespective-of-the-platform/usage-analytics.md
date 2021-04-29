@@ -4,5 +4,11 @@
 
 {% page-ref page="../resource-of-the-book/how-to-follow-update.md" %}
 
+导出报表结果
+
+{% embed url="https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/407" %}
+
+
+
 
 
