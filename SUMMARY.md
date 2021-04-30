@@ -31,7 +31,7 @@
   * [发现和安装应用](users-prespective-of-the-platform/discover-install-teams-apps.md)
   * [用Power Platform释放你的潜能](users-prespective-of-the-platform/empower-every-person-with-power-platform.md)
 * [从 IT 管理运营角度看平台](it-prespective-of-the-platform/README.md)
-  * [管理员和相关工具](it-prespective-of-the-platform/guan-li-yuan-he-xiang-guan-gong-ju.md)
+  * [管理员和相关工具](it-prespective-of-the-platform/admin-and-tools.md)
   * [规划 Teams 和推广路径](it-prespective-of-the-platform/plan-and-adoption.md)
   * [基于策略的管理](it-prespective-of-the-platform/policy-based-managment.md)
   * [应用权限策略配置](it-prespective-of-the-platform/app-permission-policy.md)
