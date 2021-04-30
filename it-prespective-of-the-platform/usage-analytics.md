@@ -70,7 +70,7 @@ Install-Module Microsoft.Graph
 {% endtab %}
 {% endtabs %}
 
-要访问Microsoft Graph的API，你首先需要登录，并且申请有关的权限。
+要访问Microsoft Graph的API，你首先需要登录，并且申请有关的权限，请查阅对应的接口文档中的权限说明，本例的Reports.Read.All这个权限是对应报表接口的。
 
 ```text
 Connect-Graph -Scopes "Reports.Read.All"
