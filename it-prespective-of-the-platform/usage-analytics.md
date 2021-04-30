@@ -99,8 +99,10 @@ Invoke-GraphRequest -Uri "v1.0/reports/getTeamsUserActivityUserDetail(period='D3
 ![](../.gitbook/assets/tu-pian-%20%28192%29.png)
 
 {% hint style="info" %}
-period可以有四个选项，分别是 D7,D30,D90,D180， 代表7天，30天，90天，180天的数据聚合
+period可以有四个选项，分别是 D7,D30,D90,D180， 代表7天，30天，90天，180天的数据聚合, 请注意，目前在管理中心只能下载最多90天的数据聚合，但通过接口或PowerShell可以最多获取180天。
 {% endhint %}
+
+
 
 
 
