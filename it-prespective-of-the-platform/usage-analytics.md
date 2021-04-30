@@ -32,8 +32,6 @@ description: 通过数据，掌握规律
 
 ![](../.gitbook/assets/tu-pian-%20%28181%29.png)
 
-## 通过Microsoft Graph API访问数据
-
 通过管理中心查看报表进行分析非常方便，与此同时这些报表也可以通过Microsoft Graph接口进行访问
 
 {% embed url="https://docs.microsoft.com/zh-cn/graph/api/resources/report?view=graph-rest-1.0" %}
