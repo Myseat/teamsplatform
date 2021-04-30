@@ -6,7 +6,7 @@ description: 通过数据，掌握规律
 
 作为管理员，你随时可以查看整个公司使用Teams的统计数据，并且对其进行分析，以便掌握规律，帮助公司做出更好的决策。
 
-## 通过管理中心查看并下载报告
+## 通过管理中心查看并下载报告 <a id="admincenter"></a>
 
 通过登录到 [https://admin.teams.microsoft.com/analytics/reports](https://admin.teams.microsoft.com/analytics/reports) ，你可以进入“分析和报告“中心，在这里列出了常见的报表，如下图所示
 
@@ -32,7 +32,7 @@ description: 通过数据，掌握规律
 
 ![](../.gitbook/assets/tu-pian-%20%28181%29.png)
 
-## 使用Microsoft Graph 读取数据
+## 使用Microsoft Graph 读取数据 <a id="msgraph"></a>
 
 通过管理中心查看报表进行分析非常方便，与此同时这些报表也可以通过Microsoft Graph接口进行访问
 
@@ -50,7 +50,7 @@ description: 通过数据，掌握规律
 
 这些接口既是面向开发者的，也是面向管理员的。作为开发者来说，只要熟悉一些HTTP的基本知识，并且了解如何进行OAuth身份认证，就可以很方便地通过编程的方式访问这些接口，将其整合到自己的应用系统中。那么，对于管理员来说，这些接口到底怎么用呢？简单地说，你可以用PowerShell来实现。
 
-## 通过PowerShell脚本查看和下载报表
+## 通过PowerShell脚本查看和下载报表 <a id="powershell"></a>
 
 你可以有多种方式运行PowerShell，但我这里统一推荐你使用最新的7.1这个版本，该版本不仅仅可以在Windows上面运行，而且还可以在Mac或者Linux桌面版运行。
 
