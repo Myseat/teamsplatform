@@ -98,7 +98,9 @@ Invoke-GraphRequest -Uri "v1.0/reports/getTeamsUserActivityUserDetail(period='D3
 
 ![](../.gitbook/assets/tu-pian-%20%28192%29.png)
 
-请注意，period可以有四个选项，分别是 D7,D30,D90,D180
+{% hint style="info" %}
+period可以有四个选项，分别是 D7,D30,D90,D180， 代表7天，30天，90天，180天的数据聚合
+{% endhint %}
 
 
 
