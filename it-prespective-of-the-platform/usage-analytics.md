@@ -32,6 +32,8 @@ description: 通过数据，掌握规律
 
 ![](../.gitbook/assets/tu-pian-%20%28181%29.png)
 
+## 使用Microsoft Graph 读取数据
+
 通过管理中心查看报表进行分析非常方便，与此同时这些报表也可以通过Microsoft Graph接口进行访问
 
 {% embed url="https://docs.microsoft.com/zh-cn/graph/api/resources/report?view=graph-rest-1.0" %}
@@ -85,6 +87,22 @@ Connect-Graph -Scopes "Reports.Read.All"
 点击下一步，使用管理员账号进行登录并且进行授权。如果是第一次登录，你将看到如下的提示。
 
 ![](../.gitbook/assets/tu-pian-%20%28189%29.png)
+
+点击“接受”按钮即可完成授权，此时可以回到PowerShell 窗口。执行下面的命令，可以获取到过去30天的用户活动统计。
+
+```text
+Invoke-GraphRequest -Uri "v1.0/reports/getTeamsUserActivityUserDetail(period='D30')" -OutputFilePath c:\temp\teamsuseractivity_d30.csv
+```
+
+默认导出的这个文件是CSV格式的，请参考下面的结果。
+
+![](../.gitbook/assets/tu-pian-%20%28192%29.png)
+
+请注意，period可以有四个选项，分别是 D7,D30,D90,D180
+
+
+
+
 
 
 
