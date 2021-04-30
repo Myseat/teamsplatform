@@ -32,6 +32,7 @@
   * [用Power Platform释放你的潜能](users-prespective-of-the-platform/empower-every-person-with-power-platform.md)
 * [从 IT 管理运营角度看平台](it-prespective-of-the-platform/README.md)
   * [规划 Teams 和推广路径](it-prespective-of-the-platform/plan-and-adoption.md)
+  * [通过策略进行管理](it-prespective-of-the-platform/policy-based-managment.md)
   * [应用权限策略配置](it-prespective-of-the-platform/app-permission-policy.md)
   * [应用安装策略](it-prespective-of-the-platform/app-setup-policy.md)
   * [定义和分发团队模板](it-prespective-of-the-platform/define-team-template.md)
