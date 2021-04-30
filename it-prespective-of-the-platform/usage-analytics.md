@@ -32,11 +32,35 @@ description: 通过数据，掌握规律
 
 ![](../.gitbook/assets/tu-pian-%20%28181%29.png)
 
-通过管理中心查看报表进行分析非常方便
+## 通过Microsoft Graph API访问数据
+
+通过管理中心查看报表进行分析非常方便，与此同时这些报表也可以通过Microsoft Graph接口进行访问
+
+{% embed url="https://docs.microsoft.com/zh-cn/graph/api/resources/report?view=graph-rest-1.0" %}
+
+针对Teams相关的报表，主要有如下两类：设备使用情况 和 用户活动。
+
+![](../.gitbook/assets/tu-pian-%20%28187%29.png)
+
+具体来说，每个接口都有一个访问地址，用户需要得到授权（要么是委派权限，要么是应用权限）才可以访问对应的数据。例如下面 [这个接口](https://docs.microsoft.com/zh-cn/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-1.0) 用来访问 Teams 用户活动的详细信息。
+
+![](../.gitbook/assets/tu-pian-%20%28188%29.png)
+
+
+
+这些接口既是面向开发者的，也是面向管理员的。作为开发者来说，只要熟悉一些HTTP的基本知识，并且了解如何进行OAuth身份认证，就可以很方便地通过编程的方式访问这些接口，将其整合到自己的应用系统中。那么，对于管理员来说，这些接口到底怎么用呢？简单地说，你可以用PowerShell来实现。
 
 ## 通过PowerShell脚本查看和下载报表
 
+你可以有多种方式运行PowerShell，但我这里统一推荐你使用最新的7.1这个版本，该版本不仅仅可以在Windows上面运行，而且还可以在Mac或者Linux桌面版运行。
 
+![](../.gitbook/assets/tu-pian-%20%28191%29.png)
+
+请参考下面的链接进行安装
+
+{% embed url="https://docs.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell?view=powershell-7.1" %}
+
+安装好PowerShell后，你需要安装用来访问Microsoft Graph的模块, 请在PowerShell窗口中输入并执行如下命令：
 
 {% tabs %}
 {% tab title="PowerShell" %}
@@ -45,6 +69,24 @@ Install-Module Microsoft.Graph
 ```
 {% endtab %}
 {% endtabs %}
+
+要访问Microsoft Graph的API，你首先需要登录，并且申请有关的权限。
+
+```text
+Connect-Graph -Scopes "Reports.Read.All"
+```
+
+执行此命令后会得到一个提示，需要你在浏览器中进行登录
+
+![](../.gitbook/assets/tu-pian-%20%28186%29.png)
+
+你必须在两分钟内完成登录和授权
+
+![](../.gitbook/assets/tu-pian-%20%28190%29.png)
+
+点击下一步，使用管理员账号进行登录并且进行授权。如果是第一次登录，你将看到如下的提示。
+
+![](../.gitbook/assets/tu-pian-%20%28189%29.png)
 
 
 
