@@ -35,7 +35,7 @@
   * [管理员和相关工具](it-prespective-of-the-platform/admin-and-tools.md)
   * [基于策略的管理](it-prespective-of-the-platform/policy-based-managment.md)
   * [应用权限策略配置](it-prespective-of-the-platform/app-permission-policy.md)
-  * [应用安装策略](it-prespective-of-the-platform/app-setup-policy.md)
+  * [应用设置策略](it-prespective-of-the-platform/app-setup-policy.md)
   * [定义和分发团队模板](it-prespective-of-the-platform/define-team-template.md)
   * [使用量分析](it-prespective-of-the-platform/usage-analytics.md)
   * [通过应用模板创建自定义应用](it-prespective-of-the-platform/app-template-usage.md)

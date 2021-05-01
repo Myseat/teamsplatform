@@ -51,7 +51,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 2. 如果某个用户是一个或多个组的成员，而这些组都被分配了某个策略，那么按照这些组被分配时的排名（Rank）最小的为准。
 3. 如果用户既没有单独分配策略，也没有作为组成员被分配策略，则以全局策略为准。
 
-![](../.gitbook/assets/tu-pian-%20%28204%29.png)
+![](../.gitbook/assets/tu-pian-%20%28207%29.png)
 
 ## 策略包
 
@@ -59,19 +59,178 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 管理员可以通过 [https://admin.teams.microsoft.com/policy-packages](https://admin.teams.microsoft.com/policy-packages) 访问策略包。
 
-![](../.gitbook/assets/tu-pian-%20%28202%29.png)
+![](../.gitbook/assets/tu-pian-%20%28204%29.png)
 
 和策略一样，这里也有默认定义好的很多现成的包，可以直接分配给用户（点击下图的“管理用户”按钮）或组使用（点击下图的 “组包分配”按钮）。
 
-![](../.gitbook/assets/tu-pian-%20%28206%29.png)
+![](../.gitbook/assets/tu-pian-%20%28210%29.png)
 
 点击上图中的 “添加”按钮，可以创建新的策略包，你可以选择一种或多种策略，对他们进行组合使用。
 
-![](../.gitbook/assets/tu-pian-%20%28201%29.png)
+![](../.gitbook/assets/tu-pian-%20%28203%29.png)
 
 ## 通过PowerShell 分配和管理策略
 
+通过管理员中心，你可以完成绝大部分跟策略管理的工作，但有些功能还不完善（尤其是针对组进行策略分配），此时你可以通过PowerShell来实现。下面我将展示主要的操作流程，和常见的命令。
 
+### 安装和准备
 
+请参考 [https://teamsplatform.code365.xyz/it-prespective-of-the-platform/admin-and-tools\#admin-tools](https://teamsplatform.code365.xyz/it-prespective-of-the-platform/admin-and-tools#admin-tools) 的说明安装PowerShell，和所有的三个模块。
 
+### 连接到MicrosoftTeams
+
+你有多种方式连接到MicrosoftTeams, 下面的方式会跳出浏览器窗口让你输入用户名和密码，这种方式是最简单也是最安全的。但这种方式是需要用户干预的，无法实现自动化。你还可以通过证书或者保存在本地的凭据等方式来连接。详情可以参考 [https://docs.microsoft.com/zh-cn/powershell/module/teams/connect-microsoftteams?view=teams-ps](https://docs.microsoft.com/zh-cn/powershell/module/teams/connect-microsoftteams?view=teams-ps) 。
+
+{% hint style="warning" %}
+普通用户也能通过这个命令连接到MicrosoftTeams，但他们在执行某些命令时会被拒绝。
+{% endhint %}
+
+```text
+Import-Module MicrosoftTeams #可选，但加上这一行比较保险
+Connect-MicrosoftTeams
+```
+
+### 给组分配策略
+
+如果希望通过PowerShell 将某个策略分配给某个组，可以使用下面这样的命令语法。
+
+```text
+New-CsGroupPolicyAssignment -PolicyType TeamsAppSetupPolicy -PolicyName "技术委员会" -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad
+```
+
+值得注意的是，目前只有下面的策略类型是受支持的。
+
+* TeamsAppSetupPolicy
+* TeamsCallingPolicy
+* TeamsCallParkPolicy
+* TeamsChannelsPolicy
+* TeamsComplianceRecordingPolicy
+* TenantDialPlan
+* TeamsEducationAssignmentsAppPolicy
+* TeamsMeetingBroadcastPolicy
+* TeamsMeetingPolicy
+* TeamsMessagingPolicy
+* TeamsShiftsPolicy
+* TeamsUpdateManagementPolicy
+
+这里的GroupId是指组的唯一编号，你可以通过在Azure Portal中查看，或者通过下面的PowerShell命令查看，假设你知道组名称的话。
+
+```text
+Import-Module Az.Resources # 可选，但加上这一行比较保险
+Get-AzADGroup -DisplayNameStartsWith "技术委员会"
+```
+
+### 批量给用户分配策略
+
+上面提到，并非所有的策略类型都支持按组分配，例如我们常用的App Permission Policy（应用权限策略）目前就不支持。下面这个脚本可以通过“比较笨”的方法，枚举一个组中所有用户，并且一个一个地给他们分配。
+
+```text
+<#
+
+概述：这个脚本用来为一个组的所有成员设置AppPermissionPolicy. 
+目前这个Policy还无法直接按组分配，所以需要自定义脚本来实现。
+请参考对应的文章说明：https://teamsplatform.code365.xyz/it-prespective-of-the-platform/policy-based-managment
+
+作者：陈希章 （code365@xizhang.com)
+网站：https://teamsplatform.code365.xyz 
+
+#>
+[CmdletBinding()]
+param (
+    [Parameter(Mandatory = $true)]
+    [string]
+    $GroupName,
+    [Parameter(Mandatory = $true)]
+    [string]
+    $PolicyName
+)
+
+# 连接
+Import-Module MicrosoftTeams
+Import-Module Az.Resources
+
+Connect-MicrosoftTeams
+Connect-AzAccount
+
+# 查找组成员 
+Function Get-RecursiveAzureAdGroupMemberUsers {
+    [cmdletbinding()]
+    param(
+        [parameter(Mandatory = $True, ValueFromPipeline = $true)]
+        $AzureGroup
+    )
+    Begin {
+        
+    }
+    Process {
+        Write-Verbose -Message "枚举组成员 $($AzureGroup.DisplayName)"
+        $Members = Get-AzADGroupMember -GroupObjectId $AzureGroup.Id
+            
+        $UserMembers = $Members | Where-Object { $_.ObjectType -eq 'User' }
+        If ($Members | Where-Object { $_.ObjectType -eq 'Group' }) {
+            [array]$UserMembers += $Members | Where-Object { $_.ObjectType -eq 'Group' } | ForEach-Object { Get-RecursiveAzureAdGroupMemberUsers -AzureGroup $_ }
+        }
+    }
+    end {
+        Return $UserMembers
+    }
+}
+
+# 设置组成员权限策略
+$group = Get-AzADGroup -DisplayName $GroupName
+$members = Get-RecursiveAzureAdGroupMemberUsers -AzureGroup $group | Where-Object { $_.ObjectType -eq "User" }
+$batchId = New-CsBatchPolicyAssignmentOperation -Identity $members.UserPrincipalName -PolicyName $PolicyName -PolicyType TeamsAppPermissionPolicy
+
+Write-Host "已经开始批量处理，你可以通过 Get-CsBatchPolicyAssignmentOperation -OperationId $batchId 随时看到进度"
+```
+
+你也可以下载这个脚本到你的本地，解压缩后得到里面的ps1文件。
+
+{% file src="../.gitbook/assets/assignpermissionpolicytogroup.zip" caption="批量分配策略脚本" %}
+
+这个脚本已经参数化，你可以按照下面的格式执行它，记得替换GroupName和PolicyName参数的值即可。
+
+```text
+ .\AssignPermissionPolicyToGroup.ps1 -GroupName  技术委员会 -PolicyName 技术委员会
+```
+
+这个脚本是通过批量处理（Batch）的方式提交给后台，你随时可以通过提示的信息查看操作进度。
+
+```text
+Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437a73329
+```
+
+你可能需要等待一会儿才能看到Completed的状态。
+
+![](../.gitbook/assets/tu-pian-%20%28201%29.png)
+
+{% hint style="warning" %}
+给用户直接分配的策略将拥有最高的优先级，请确保你充分理解这个原理。在能直接用组分配时，我建议优先用组的方式分配。
+{% endhint %}
+
+### 获取一个用户被分配的所有策略
+
+如果你需要查看某个用户当前被最终分配使用的策略信息，可以用如下的命令
+
+```text
+Get-CsOnlineUser -Identity tiger@code365.xyz | Select-Object DisplayName, UserPrincipalName, *Policy*
+```
+
+你会看到的结果类似如下
+
+![](../.gitbook/assets/tu-pian-%20%28209%29.png)
+
+### 其他跟策略相关的命令
+
+你随时可以通过下面的命令查看所有跟策略相关的命令
+
+```text
+Get-Command -Module MicrosoftTeams -Name *Policy*
+```
+
+初略看一下就有几十个，如果有兴趣的，请逐一进行了解。请注意，这些命令无法直接通过 `Get-Help` 查看帮助，你可能需要打开浏览器进行查询，或者通过[https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps](https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps) 进行查阅。
+
+![](../.gitbook/assets/tu-pian-%20%28202%29.png)
+
+这一节介绍了基于策略的管理机制，并且介绍了针对策略、策略包的分配，不管是从管理中心，还是通过PowerShell。下面我将专门针对 应用权限策略 和 应用设置策略 进行讲解。
 
