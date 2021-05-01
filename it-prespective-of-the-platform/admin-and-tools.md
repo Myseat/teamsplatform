@@ -41,7 +41,11 @@ Teams 管理员最常用的工具主要有两个，分别是：
 
 {% embed url="https://docs.microsoft.com/zh-cn/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1" %}
 
+## 管理员认证考试
 
+我还很推荐管理员经过系统学习后，争取能拿到下面这个官方认证。
+
+{% embed url="https://docs.microsoft.com/zh-cn/learn/certifications/m365-teams-administrator-associate/" %}
 
 
 
