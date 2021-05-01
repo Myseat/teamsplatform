@@ -8,7 +8,7 @@ description: 为用户预装应用
 
 通过 [https://admin.teams.microsoft.com/policies/app-setup](https://admin.teams.microsoft.com/policies/app-setup) 可以查看并定义设置策略。
 
-![](../.gitbook/assets/tu-pian-%20%28220%29.png)
+![](../.gitbook/assets/tu-pian-%20%28223%29.png)
 
 全局的策略一般如下
 
@@ -20,7 +20,7 @@ description: 为用户预装应用
 
 如果该用户本身是一个开发者，他可能会尝试通过其他的方式（例如通过开发工具）来尝试安装自定义应用，只要他被分配的应用设置策略，不允许他上传自定义应用的话，他仍然是无法成功的。下面这个错误消息，已经很清楚地告诉他，需要请IT管理员帮忙添加才能测试这个应用。
 
-![](../.gitbook/assets/tu-pian-%20%28225%29.png)
+![](../.gitbook/assets/tu-pian-%20%28229%29.png)
 
 严格来说，我觉得这两个设置更应该属于上一节讲的“权限策略”，而不是“设置策略”。
 
@@ -32,7 +32,7 @@ description: 为用户预装应用
 这里搜索的应用，必须包含Personal Scope，因为这是针对个人进行安装。
 {% endhint %}
 
-![](../.gitbook/assets/tu-pian-%20%28214%29.png)
+![](../.gitbook/assets/tu-pian-%20%28215%29.png)
 
 在策略中定义的应用，一般分配给用户并且生效后，用户就自动拥有了这些应用，他们不需要自己去搜索和安装，这个功能是非常有用的。
 

@@ -38,7 +38,6 @@
   * [应用设置策略](it-prespective-of-the-platform/app-setup-policy.md)
   * [定义和分发团队模板](it-prespective-of-the-platform/define-team-template.md)
   * [使用量分析](it-prespective-of-the-platform/usage-analytics.md)
-  * [通过应用模板创建自定义应用](it-prespective-of-the-platform/app-template-usage.md)
   * [发布和管理企业应用](it-prespective-of-the-platform/publish-org-apps.md)
 * [从开发团队角度看平台](dev-team-perspective-of-the-platform/README.md)
   * [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
