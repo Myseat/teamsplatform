@@ -43,6 +43,6 @@ description: 为用户预装应用
 ![](../.gitbook/assets/tu-pian-%20%28200%29.png)
 
 {% hint style="info" %}
-你可以通过PowerShell 对权限策略进行分发，详情请参考“基于策略的管理”这一节的介绍。
+你可以通过PowerShell 对应用设置策略进行分发，详情请参考“基于策略的管理”这一节的介绍。
 {% endhint %}
 
