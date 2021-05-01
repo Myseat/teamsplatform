@@ -30,7 +30,7 @@ Skype for Business Online 将于 2021 年 7 月 31 日停用，此后它将不�
 
 这并不容易，微软需要兼顾到老客户的使用习惯、既有投资回报等非技术因素，可以这么说，Microsoft Teams 负重前行，同时又被寄予厚望，压力是可想而知的。好在在得到广大客户支持的情况下，真正实现 能支持你能想象到的最复杂的场景，不辱使命。
 
-我特别翻阅了一些临时材料，找到一份展示Skype for Business 与 Teams 共存过渡的各种组合方案，给大家也留念一下吧。
+我特别翻阅了一些历史材料，找到一份展示Skype for Business 与 Teams 共存过渡的各种组合方案，给大家也留念一下吧。
 
 ![](../.gitbook/assets/tu-pian-%20%28243%29.png)
 
@@ -44,9 +44,7 @@ Skype for Business Online 将于 2021 年 7 月 31 日停用，此后它将不�
 
 因为公司认为，推行Teams绝不是简单地换了一个工具，而是推行一种全新的更加**强调沟通、重视反馈、讲求合作**的文化，换言之，也就是作为当下时兴的“数字化转型”的重要抓手来做才行。
 
-这可能是第一个也是最重要的经验：需要在公司引起重视，并且切实地制定计划。这项工作远不是像说的这么容易，期间有大量工作是跟变更管理有关，学过PMP的朋友对下图应该不陌生。
-
-![](../.gitbook/assets/tu-pian-%20%28253%29.png)
+这可能是第一个也是最重要的经验：需要在公司引起重视，并且切实地制定计划。这项工作远不是像说的这么容易，期间有大量工作是跟变更管理有关，这里（[https://docs.microsoft.com/zh-cn/MicrosoftTeams/change-management-strategy](https://docs.microsoft.com/zh-cn/MicrosoftTeams/change-management-strategy)）有一些可以参考的实践经验。
 
 在操作层面，我记得当时从产品组和IT部门一起，组织了虚拟工作小组，他们需要研究到底怎么切换和过渡，以及为员工准备各种培训。
 
