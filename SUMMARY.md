@@ -40,7 +40,6 @@
   * [使用量分析](it-prespective-of-the-platform/usage-analytics.md)
   * [通过应用模板创建自定义应用](it-prespective-of-the-platform/app-template-usage.md)
   * [发布和管理企业应用](it-prespective-of-the-platform/publish-org-apps.md)
-  * [Teams PowerShell 模块](it-prespective-of-the-platform/powershell-module.md)
 * [从开发团队角度看平台](dev-team-perspective-of-the-platform/README.md)
   * [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
   * [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)

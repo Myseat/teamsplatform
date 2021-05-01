@@ -4,5 +4,5 @@
 
 {% page-ref page="../resource-of-the-book/how-to-follow-update.md" %}
 
-![](../.gitbook/assets/tu-pian-%20%28213%29.png)
+![](../.gitbook/assets/tu-pian-%20%28216%29.png)
 
