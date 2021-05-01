@@ -69,7 +69,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 和策略一样，这里也有默认定义好的很多现成的包，可以直接分配给用户（点击下图的“管理用户”按钮）或组使用（点击下图的 “组包分配”按钮）。
 
-![](../.gitbook/assets/tu-pian-%20%28220%29.png)
+![](../.gitbook/assets/tu-pian-%20%28221%29.png)
 
 点击上图中的 “添加”按钮，可以创建新的策略包，你可以选择一种或多种策略，对他们进行组合使用。
 
@@ -104,7 +104,7 @@ Connect-MicrosoftTeams
 Get-Command -Module microsoftteams -Name *Cs*Policy* | Where-Object {$_.Verb -in @("New","Set","Remove")}
 ```
 
-![](../.gitbook/assets/tu-pian-%20%28221%29.png)
+![](../.gitbook/assets/tu-pian-%20%28222%29.png)
 
 ### 给用户分配策略、策略包
 
@@ -249,10 +249,10 @@ Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437
 ![](../.gitbook/assets/tu-pian-%20%28206%29.png)
 
 {% hint style="warning" %}
-给用户直接分配的策略将拥有最高的优先级，请确保你充分理解这个原理。在能直接用组分配时，我建议优先用组的方式分配。
+给用户直接分配的策略将拥有最高的优先级，请确保你充分理解这个原理。在能直接用组分配时，**我建议优先用组的方式分配。**
 {% endhint %}
 
-### 获取一个用户被分配的所有策略
+### 获取一个用户或组被分配的所有策略
 
 如果你需要查看某个用户当前被最终分配使用的策略信息，可以用如下的命令
 
@@ -264,13 +264,21 @@ Get-CsUserPolicyAssignment -Identity tiger@code365.xyz
 
 ![](../.gitbook/assets/tu-pian-%20%28204%29.png)
 
-### 获取一个组被分配的所有策略
+你可以通过如下的命令查看某个组所分配的所有策略
 
-### 
+```text
+Get-CsGroupPolicyAssignment -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad
+```
 
-### 取消某个用户的策略分配
+正常情况下返回的结果如下
 
+![](../.gitbook/assets/tu-pian-%20%28216%29.png)
 
+### 取消某个用户或组的策略分配
+
+{% hint style="danger" %}
+目前没有命令直接可以撤销某个用户的某个策略分配，一个可行的办法，是建立一个其他的策略，然后将其分配给用户。
+{% endhint %}
 
 ### 其他跟策略相关的命令
 
