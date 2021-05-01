@@ -57,7 +57,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 2. 如果某个用户是一个或多个组的成员，而这些组都被分配了某个策略，那么按照这些组被分配时的排名（Rank）最小的为准。
 3. 如果用户既没有单独分配策略，也没有作为组成员被分配策略，则以全局策略为准。
 
-![](../.gitbook/assets/tu-pian-%20%28221%29.png)
+![](../.gitbook/assets/tu-pian-%20%28224%29.png)
 
 ## 策略包
 
@@ -69,7 +69,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 和策略一样，这里也有默认定义好的很多现成的包，可以直接分配给用户（点击下图的“管理用户”按钮）或组使用（点击下图的 “组包分配”按钮）。
 
-![](../.gitbook/assets/tu-pian-%20%28232%29.png)
+![](../.gitbook/assets/tu-pian-%20%28236%29.png)
 
 点击上图中的 “添加”按钮，可以创建新的策略包，你可以选择一种或多种策略，对他们进行组合使用。
 
@@ -104,7 +104,7 @@ Connect-MicrosoftTeams
 Get-Command -Module microsoftteams -Name *Cs*Policy* | Where-Object {$_.Verb -in @("New","Set","Remove")}
 ```
 
-![](../.gitbook/assets/tu-pian-%20%28234%29.png)
+![](../.gitbook/assets/tu-pian-%20%28238%29.png)
 
 ### 给用户分配策略、策略包
 
@@ -272,7 +272,7 @@ Get-CsGroupPolicyAssignment -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad
 
 正常情况下返回的结果如下
 
-![](../.gitbook/assets/tu-pian-%20%28223%29.png)
+![](../.gitbook/assets/tu-pian-%20%28226%29.png)
 
 ### 取消某个用户或组的策略分配
 
