@@ -11,6 +11,12 @@ description: 灵活并且强大
 3. 相关的服务在运行期间，将首先检测当前用户所被分配的策略，以便决定哪些功能可用，哪些不可用
 4. 平台可以基于策略对用户行为进行审核【目前还没有】
 
+{% hint style="info" %}
+基于策略的管理，跟很多公司的管理理念是契合的，在英语中Policy的说法很常见，常被理解为策略或规则吧，例如“xxxxx的做法是公司Policy不允许的”。其实，任何公司其实都是有规则的小社会，区别在于这些规则如何被定义，如何被执行，以及执行之后能达到什么效果。
+
+这也是我在Microsoft 365各个产品中越来越多看到的做法，尤其是Teams，从平台层面，将这种管理的文化无缝地融合进来了。
+{% endhint %}
+
 ## 有哪些策略，分别解决什么问题
 
 Teams 管理中心现在支持多达14种策略的定义和分发。
@@ -39,7 +45,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 部分策略，目前还不支持按组分配。管理员可以通过PowerShell 进行分配。本节末尾会介绍。
 {% endhint %}
 
-![](../.gitbook/assets/tu-pian-%20%28200%29.png)
+![](../.gitbook/assets/tu-pian-%20%28203%29.png)
 
 {% hint style="info" %}
 大部分策略的分配都需要一定时间才能生效，官方文档说要几个小时，甚至24小时内才能完成。但实际生效时间也可能很快。
@@ -47,11 +53,11 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 那么，既然策略允许自定义，并且支持针对用户或组进行分配，假设用户同时被分配了多个策略，那么到底以哪一个为准呢？Teams 平台将遵循下面的原则进行分配。
 
-1. 如果某个用户被直接分配了一个策略，那么就以这个策略为准。否则进行下一步的判断。
+1. 如果某个用户被直接分配了一个策略，那么就以这个策略为准。否则进行下一步的判断。如果某个用户被多次分配同一类应用，则以最后分配的那次为准。
 2. 如果某个用户是一个或多个组的成员，而这些组都被分配了某个策略，那么按照这些组被分配时的排名（Rank）最小的为准。
 3. 如果用户既没有单独分配策略，也没有作为组成员被分配策略，则以全局策略为准。
 
-![](../.gitbook/assets/tu-pian-%20%28207%29.png)
+![](../.gitbook/assets/tu-pian-%20%28214%29.png)
 
 ## 策略包
 
@@ -59,15 +65,15 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 管理员可以通过 [https://admin.teams.microsoft.com/policy-packages](https://admin.teams.microsoft.com/policy-packages) 访问策略包。
 
-![](../.gitbook/assets/tu-pian-%20%28204%29.png)
+![](../.gitbook/assets/tu-pian-%20%28209%29.png)
 
 和策略一样，这里也有默认定义好的很多现成的包，可以直接分配给用户（点击下图的“管理用户”按钮）或组使用（点击下图的 “组包分配”按钮）。
 
-![](../.gitbook/assets/tu-pian-%20%28210%29.png)
+![](../.gitbook/assets/tu-pian-%20%28219%29.png)
 
 点击上图中的 “添加”按钮，可以创建新的策略包，你可以选择一种或多种策略，对他们进行组合使用。
 
-![](../.gitbook/assets/tu-pian-%20%28203%29.png)
+![](../.gitbook/assets/tu-pian-%20%28208%29.png)
 
 ## 通过PowerShell 分配和管理策略
 
@@ -202,7 +208,7 @@ Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437
 
 你可能需要等待一会儿才能看到Completed的状态。
 
-![](../.gitbook/assets/tu-pian-%20%28201%29.png)
+![](../.gitbook/assets/tu-pian-%20%28205%29.png)
 
 {% hint style="warning" %}
 给用户直接分配的策略将拥有最高的优先级，请确保你充分理解这个原理。在能直接用组分配时，我建议优先用组的方式分配。
@@ -218,7 +224,11 @@ Get-CsOnlineUser -Identity tiger@code365.xyz | Select-Object DisplayName, UserPr
 
 你会看到的结果类似如下
 
-![](../.gitbook/assets/tu-pian-%20%28209%29.png)
+![](../.gitbook/assets/tu-pian-%20%28218%29.png)
+
+### 取消某个用户的策略分配
+
+
 
 ### 其他跟策略相关的命令
 
@@ -230,7 +240,11 @@ Get-Command -Module MicrosoftTeams -Name *Policy*
 
 初略看一下就有几十个，如果有兴趣的，请逐一进行了解。请注意，这些命令无法直接通过 `Get-Help` 查看帮助，你可能需要打开浏览器进行查询，或者通过[https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps](https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps) 进行查阅。
 
-![](../.gitbook/assets/tu-pian-%20%28202%29.png)
+![](../.gitbook/assets/tu-pian-%20%28206%29.png)
+
+### 
+
+
 
 这一节介绍了基于策略的管理机制，并且介绍了针对策略、策略包的分配，不管是从管理中心，还是通过PowerShell。下面我将专门针对 应用权限策略 和 应用设置策略 进行讲解。
 
