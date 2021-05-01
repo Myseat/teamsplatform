@@ -1,5 +1,7 @@
 # 发布和管理企业应用
 
+管理员可以对公司使用的企业应用做更多的控制，包括审核批准自定义应用（不管是公司内部开发的，还是委托第三方合作伙伴开发的），以及批量购买第三方应用，对现有应用的属性进行设置，以及自定义公司的应用商店等。
+
 ## 审核自定义应用
 
 Microsoft Teams 允许普通用户在需要时向管理员提交自定义应用，以便在公司更加广泛地使用。
@@ -106,7 +108,7 @@ Microsoft Teams 允许普通用户在需要时向管理员提交自定义应用�
 
 只要是这样定义的应用，不管是发布到了官方商店，还是提交到公司的商店，它的“可自定义” 这一列会变成 "是”，选中此应用时，工具栏中的 “自定义”按钮就可以使用，管理员可以上述提到的属性进行自定义。
 
-![](../.gitbook/assets/tu-pian-%20%28242%29.png)
+![](../.gitbook/assets/tu-pian-%20%28243%29.png)
 
 {% hint style="danger" %}
 很遗憾，在写作本文时，我可以修改这个manifest，但无法上传，所以无法完成实际上的截图。该问题已经在反馈处理中。
@@ -116,7 +118,7 @@ Microsoft Teams 允许普通用户在需要时向管理员提交自定义应用�
 
 为了让客户可以自定义应用商店的外观，以便更加接近公司的形象，Teams提供了“自定义应用商店”的功能，管理员可以通过 [https://admin.teams.microsoft.com/policies/customize-appstore](https://admin.teams.microsoft.com/policies/customize-appstore) 进行设置。
 
-![](../.gitbook/assets/tu-pian-%20%28243%29.png)
+![](../.gitbook/assets/tu-pian-%20%28244%29.png)
 
 简单地说，你可以设置三个图片，格式可以是JPG,PNG，尺寸分别如下
 
@@ -126,9 +128,5 @@ Microsoft Teams 允许普通用户在需要时向管理员提交自定义应用�
 
 在我的测试环境，自定义之后的效果如下
 
-
-
-
-
-
+![](../.gitbook/assets/tu-pian-%20%28242%29.png)
 
