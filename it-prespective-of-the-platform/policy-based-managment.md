@@ -96,7 +96,39 @@ Import-Module MicrosoftTeams #可选，但加上这一行比较保险
 Connect-MicrosoftTeams
 ```
 
-### 给组分配策略
+### 创建和更新策略
+
+通过PowerShell来创建、更新、删除策略，针对不同的策略，有对应不同的命令，你可以通过下面这一行代码查看所有可用的命令列表
+
+```text
+Get-Command -Module microsoftteams -Name *Cs*Policy* | Where-Object {$_.Verb -in @("New","Set","Remove")}
+```
+
+![](../.gitbook/assets/tu-pian-%20%28220%29.png)
+
+### 给用户分配策略、策略包
+
+不同的策略，对应不同的命令，请用下面的查询得到可用的命令列表。
+
+```text
+Get-Command -Module microsoftteams -Name *Cs*Policy* | Where-Object {$_.Verb -eq "Grant"}
+```
+
+下面的例子是给虎妞（tiger@code365.xyz）分配一个名称为“一线工作者”的应用权限策略。
+
+```text
+Grant-CsTeamsAppPermissionPolicy -Identity tiger@code365.xyz -PolicyName "一线工作者"
+```
+
+而这个例子是给虎妞分配一个名称为“一线工作者”的策略包。
+
+```text
+Grant-CsUserPolicyPackage -Identity tiger@code365.xyz -PackageName "一线工作者"
+```
+
+
+
+### 给组分配策略、策略包
 
 如果希望通过PowerShell 将某个策略分配给某个组，可以使用下面这样的命令语法。
 
@@ -124,6 +156,12 @@ New-CsGroupPolicyAssignment -PolicyType TeamsAppSetupPolicy -PolicyName "技术�
 ```text
 Import-Module Az.Resources # 可选，但加上这一行比较保险
 Get-AzADGroup -DisplayNameStartsWith "技术委员会"
+```
+
+下面的命令是将“一线工作者”这个策略包，分配给某个用户组。
+
+```text
+Grant-CsGroupPolicyPackageAssignment -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad -PackageName "一线工作者"
 ```
 
 ### 批量给用户分配策略
