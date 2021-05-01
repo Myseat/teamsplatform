@@ -280,6 +280,12 @@ Get-CsGroupPolicyAssignment -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad
 目前没有命令直接可以撤销某个用户的某个策略分配，一个可行的办法，是建立一个其他的策略，然后将其分配给用户。
 {% endhint %}
 
+你可以通过如下命令取消某个组的策略分配。请注意，你无法单独取消某个策略，而是针对某个策略类型全部取消。
+
+```text
+Remove-CsGroupPolicyAssignment -GroupId 3a61586b-fa48-441a-99e2-787574bb2dad -PolicyType TeamsAppSetupPolicy
+```
+
 ### 其他跟策略相关的命令
 
 你随时可以通过下面的命令查看所有跟策略相关的命令
