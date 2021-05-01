@@ -18,11 +18,11 @@ Microsoft 365 有一个拥有最高权限的“全局管理员”，另外其他
 
 针对Teams，有如下五个不同的管理员角色。一个是全局的，另外四个是跟设备和通信有关。
 
-![](../.gitbook/assets/tu-pian-%20%28201%29.png)
+![](../.gitbook/assets/tu-pian-%20%28203%29.png)
 
 他们到底差异在什么地方呢？我们可以选择三个主要的管理员角色对照一下。
 
-![](../.gitbook/assets/tu-pian-%20%28203%29.png)
+![](../.gitbook/assets/tu-pian-%20%28205%29.png)
 
 本书主要侧重在Teams 作为应用平台这个角度来研究，所以在书中讲解到的管理员，除非特别说明，都是指上图中提到的 “ Teams 管理员” 这个角色，即对Teams完整功能都有权限。
 
@@ -39,7 +39,9 @@ Teams 管理员最常用的工具主要有两个，分别是：
 
 我希望你已经对PowerShell有一定的了解，如果还没有，强烈推荐你尽快地学习一下。
 
-{% embed url="https://docs.microsoft.com/zh-cn/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.1" %}
+{% embed url="https://docs.microsoft.com/zh-cn/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1" %}
+
+
 
 
 
