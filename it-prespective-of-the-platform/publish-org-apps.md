@@ -114,6 +114,20 @@ Microsoft Teams 允许普通用户在需要时向管理员提交自定义应用�
 
 ## 自定义应用商店
 
+为了让客户可以自定义应用商店的外观，以便更加接近公司的形象，Teams提供了“自定义应用商店”的功能，管理员可以通过 [https://admin.teams.microsoft.com/policies/customize-appstore](https://admin.teams.microsoft.com/policies/customize-appstore) 进行设置。
+
+![](../.gitbook/assets/tu-pian-%20%28243%29.png)
+
+简单地说，你可以设置三个图片，格式可以是JPG,PNG，尺寸分别如下
+
+1. 240\*60
+2. 32\*32
+3. 1212\*100
+
+在我的测试环境，自定义之后的效果如下
+
+
+
 
 
 
