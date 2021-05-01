@@ -57,7 +57,7 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 2. 如果某个用户是一个或多个组的成员，而这些组都被分配了某个策略，那么按照这些组被分配时的排名（Rank）最小的为准。
 3. 如果用户既没有单独分配策略，也没有作为组成员被分配策略，则以全局策略为准。
 
-![](../.gitbook/assets/tu-pian-%20%28214%29.png)
+![](../.gitbook/assets/tu-pian-%20%28215%29.png)
 
 ## 策略包
 
@@ -65,15 +65,15 @@ Teams 管理中心现在支持多达14种策略的定义和分发。
 
 管理员可以通过 [https://admin.teams.microsoft.com/policy-packages](https://admin.teams.microsoft.com/policy-packages) 访问策略包。
 
-![](../.gitbook/assets/tu-pian-%20%28209%29.png)
+![](../.gitbook/assets/tu-pian-%20%28210%29.png)
 
 和策略一样，这里也有默认定义好的很多现成的包，可以直接分配给用户（点击下图的“管理用户”按钮）或组使用（点击下图的 “组包分配”按钮）。
 
-![](../.gitbook/assets/tu-pian-%20%28219%29.png)
+![](../.gitbook/assets/tu-pian-%20%28220%29.png)
 
 点击上图中的 “添加”按钮，可以创建新的策略包，你可以选择一种或多种策略，对他们进行组合使用。
 
-![](../.gitbook/assets/tu-pian-%20%28208%29.png)
+![](../.gitbook/assets/tu-pian-%20%28209%29.png)
 
 ## 通过PowerShell 分配和管理策略
 
@@ -104,7 +104,7 @@ Connect-MicrosoftTeams
 Get-Command -Module microsoftteams -Name *Cs*Policy* | Where-Object {$_.Verb -in @("New","Set","Remove")}
 ```
 
-![](../.gitbook/assets/tu-pian-%20%28220%29.png)
+![](../.gitbook/assets/tu-pian-%20%28221%29.png)
 
 ### 给用户分配策略、策略包
 
@@ -238,7 +238,7 @@ Write-Host "已经开始批量处理，你可以通过 Get-CsBatchPolicyAssignme
  .\AssignPermissionPolicyToGroup.ps1 -GroupName  技术委员会 -PolicyName 技术委员会
 ```
 
-这个脚本是通过批量处理（Batch）的方式提交给后台，你随时可以通过提示的信息查看操作进度。
+这个脚本是通过批量处理（Batch）的方式提交给后台 `New-CsBatchPolicyAssignmentOperation`，它会返回一个操作编号，你随时可以通过编号查看操作进度。
 
 ```text
 Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437a73329
@@ -246,7 +246,7 @@ Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437
 
 你可能需要等待一会儿才能看到Completed的状态。
 
-![](../.gitbook/assets/tu-pian-%20%28205%29.png)
+![](../.gitbook/assets/tu-pian-%20%28206%29.png)
 
 {% hint style="warning" %}
 给用户直接分配的策略将拥有最高的优先级，请确保你充分理解这个原理。在能直接用组分配时，我建议优先用组的方式分配。
@@ -257,12 +257,16 @@ Get-CsBatchPolicyAssignmentOperation -OperationId 16849ef9-2017-4973-a9ba-528437
 如果你需要查看某个用户当前被最终分配使用的策略信息，可以用如下的命令
 
 ```text
-Get-CsOnlineUser -Identity tiger@code365.xyz | Select-Object DisplayName, UserPrincipalName, *Policy*
+Get-CsUserPolicyAssignment -Identity tiger@code365.xyz
 ```
 
 你会看到的结果类似如下
 
-![](../.gitbook/assets/tu-pian-%20%28218%29.png)
+![](../.gitbook/assets/tu-pian-%20%28204%29.png)
+
+### 获取一个组被分配的所有策略
+
+### 
 
 ### 取消某个用户的策略分配
 
@@ -278,7 +282,7 @@ Get-Command -Module MicrosoftTeams -Name *Policy*
 
 初略看一下就有几十个，如果有兴趣的，请逐一进行了解。请注意，这些命令无法直接通过 `Get-Help` 查看帮助，你可能需要打开浏览器进行查询，或者通过[https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps](https://docs.microsoft.com/zh-cn/powershell/module/skype/?view=skype-ps) 进行查阅。
 
-![](../.gitbook/assets/tu-pian-%20%28206%29.png)
+![](../.gitbook/assets/tu-pian-%20%28207%29.png)
 
 ### 
 
