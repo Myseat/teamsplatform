@@ -1,6 +1,6 @@
 # 从开发团队角度看平台
 
-
+Microsoft Teams是一个平台，
 
 ![](../.gitbook/assets/tu-pian-%20%28258%29.png)
 
