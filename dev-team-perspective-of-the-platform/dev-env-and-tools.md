@@ -8,6 +8,8 @@
 
 ## 安装PowerShell
 
+作为开发人员，你经常需要访问Microsoft Teams的数据，以便进行验证和自动化。PowerShell将会让你事半功倍。
+
 建议安装最新的7.1.3或者更高版本，这是一个跨平台的版本。请通过 [https://docs.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell?view=powershell-7.1](https://docs.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell?view=powershell-7.1) 进行安装，并安装 `MicrosoftTeams` 这个模块，以及 `Microsoft.Graph` 和`Az` 这两个模块 （可选，但推荐）。
 
 ```text
@@ -20,7 +22,15 @@ Install-Module MicrosoftTeams,Microsoft.Graph,Az
 
 ## 使用 ngrok 提供本地隧道功能
 
+在很多微软的官方文档中都提到了 `ngrok` 这个工具，这可能是目前用的最广泛的一个将本地网站发布到外网，并且默认提供https支持的服务。它的官方网站是 [https://ngrok.com/](https://ngrok.com/) 。
 
+ngrok 有免费版和收费版，也有多种安装方式。请参考这里的说明：[https://ngrok.com/download](https://ngrok.com/download)。我自己比较喜欢的方式是将其作为npm的全局模块安装，如下
+
+```text
+npm install -g ngrok
+```
+
+这样做的好处就是可以直接用 ngrok 命令
 
 ## 使用 localhost.run 提供本地隧道功能
 
@@ -44,7 +54,7 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-一切准备就绪，假设你本地开发的项目，在 localhost:3000 运行，你可以使用下面的命令来建立一个隧道
+一切准备就绪！假设你本地开发的项目，在 localhost:3000 运行，你可以使用下面的命令来建立一个隧道
 
 ```text
 ssh -R 80:localhost:3000 localhost.run
