@@ -39,6 +39,7 @@
   * [定义和分发团队模板](it-prespective-of-the-platform/define-team-template.md)
   * [使用量分析](it-prespective-of-the-platform/usage-analytics.md)
   * [发布和管理企业应用](it-prespective-of-the-platform/publish-org-apps.md)
+  * [Power Platform的管理](it-prespective-of-the-platform/power-platform-managment.md)
 * [从开发团队角度看平台](dev-team-perspective-of-the-platform/README.md)
   * [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)
   * [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
