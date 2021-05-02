@@ -42,7 +42,6 @@
   * [Power Platform的管理](it-prespective-of-the-platform/power-platform-managment.md)
 * [从开发团队角度看平台](dev-team-perspective-of-the-platform/README.md)
   * [开发环境和工具](dev-team-perspective-of-the-platform/dev-env-and-tools.md)
-  * [在 Teams 中进行 DevOps 实践](dev-team-perspective-of-the-platform/devops-practices-in-teams.md)
   * [Teams 应用场景规划和设计](dev-team-perspective-of-the-platform/teams-scenarios-design.md)
   * [Teams 选项卡应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-tab-app-dev.md)
   * [机器人应用开发最佳实践](dev-team-perspective-of-the-platform/best-practices-of-teams-bot-dev.md)
@@ -50,5 +49,6 @@
   * [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
   * [多语言支持](dev-team-perspective-of-the-platform/multi-languages-support.md)
   * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
+  * [为你的网站添加“分享到Teams”按钮](dev-team-perspective-of-the-platform/add-the-share-to-teams-button.md)
   * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
