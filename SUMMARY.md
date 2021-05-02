@@ -50,6 +50,5 @@
   * [单点登录方案实现](dev-team-perspective-of-the-platform/sso-authentication-scenarios.md)
   * [多语言支持](dev-team-perspective-of-the-platform/multi-languages-support.md)
   * [Microsoft Graph 集成](dev-team-perspective-of-the-platform/microsoft-graph-integration.md)
-  * [持续交付](dev-team-perspective-of-the-platform/ci-and-cd-for-teams-dev.md)
   * [应用分析](dev-team-perspective-of-the-platform/application-insights.md)
 
