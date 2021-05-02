@@ -1,6 +1,6 @@
 # 从开发团队角度看平台
 
-Microsoft Teams是一个平台，
+Microsoft Teams是拥有数亿用户的平台，通过
 
 ![](../.gitbook/assets/tu-pian-%20%28258%29.png)
 
