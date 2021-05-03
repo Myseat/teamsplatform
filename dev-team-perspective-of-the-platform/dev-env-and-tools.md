@@ -19,7 +19,7 @@ description: 工欲善其事，必先利其器
 ![](../.gitbook/assets/tu-pian-%20%28265%29.png)
 
 {% hint style="warning" %}
-请注意，这个开发环境不是永久的，一般是半年授权，然后根据你在此环境中是否真的进行了相关的应用开发，决定是否能续期。你不能把它当作生产环境使用，你的重要资料也不建议保存在这个环境中。
+请注意，这个开发环境不是永久的，一般是半年一次授权，然后根据你在此环境中是否真的进行了相关的应用开发，决定是否能续期。你不能把它当作生产环境使用，你的重要资料也不建议保存在这个环境中。
 {% endhint %}
 
 ## Microsoft Azure 试用版 【可选】
@@ -158,10 +158,16 @@ npm install -g ngrok
 ngrok http --host-header=rewrite 3000
 ```
 
+这个工具会生成两个地址，可供外网访问。
 
+![](../.gitbook/assets/tu-pian-%20%28288%29.png)
+
+另外，还有一个后台网站可以查看访问的情况，包括请求和响应的细节。请通过 http://127.0.0.1:4040 访问这个网站即可。
+
+![](../.gitbook/assets/tu-pian-%20%28287%29.png)
 
 {% hint style="info" %}
-ngrok有时候可能访问有点问题，此时可以尝试localhost.run这个方案。
+ngrok 在绝大部分时候都能完美工作，但有时候可能访问有点问题，此时可以尝试localhost.run这个方案。
 {% endhint %}
 
 ### 使用 localhost.run 提供本地隧道功能
