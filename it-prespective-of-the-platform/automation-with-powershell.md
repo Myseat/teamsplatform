@@ -154,7 +154,7 @@ $channelId = (Get-TeamChannel -GroupId $teamId | Where-Object {$_.DisplayName -e
 请确保安装了Microsoft.Graph这个模块，接下来我们连接到Microsoft Graph
 
 ```text
-Connect-Graph -Scope 
+Connect-Graph -Scope "TeamsTab.Read.All,TeamsTab.Create"
 ```
 
 请按照提示完成身份认证和授权
@@ -164,7 +164,7 @@ Connect-Graph -Scope
 接下来是核心步骤了，通过Invoke-GraphReqeust 来完成请求。
 
 ```text
-# 准备要提交给服务器的数据
+# 准备要提交给服务器的数据，请注意下面列出的entityId不能随便写，据观察每个文件都有一个唯一的id，至于如何获得这个id，请参考本文后续说明
 $body =@"                                                                               
 {
 	"displayName":"销售报表",
@@ -189,6 +189,16 @@ Invoke-GraphRequest -Method POST -Uri $url -Body $body -ContentType "application
 回到团队中我们可以看到这个Excel文件已经添加到当前的频道。
 
 ![](../.gitbook/assets/tu-pian-%20%28292%29.png)
+
+{% hint style="warning" %}
+不同的选项卡的配置选项是不一样的，我认为最好的办法是，你先在一个频道把相关的选项卡配置好，然后通过下面命令读取选项卡信息，并且据此修改你要自动化批量创建时用的选项。
+
+```text
+ Invoke-GraphRequest -Uri $url -OutputType Json
+```
+
+这个命令会返回一段Json文本，据我观察，Excel 这个选项卡的EntityId，不能随便设置，每个文件都有一个对应的Id。切记！
+{% endhint %}
 
 ### 其他操作
 
