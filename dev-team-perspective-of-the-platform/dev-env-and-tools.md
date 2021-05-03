@@ -8,9 +8,21 @@ description: 工欲善其事，必先利其器
 
 只要你有Microsoft 365的账号，哪怕是普通用户账号，其实就能进行Teams的开发。但是如果想要获得最完整的体验，包括管理员配置，服务接口调用等。你最好有一个用来做开发测试的账号或环境。
 
-你可以通过 
+你可以通过下面的地址申请免费的Microsoft 365开发者账号，申请成功后，你将获得一个完整的环境，包含了25个Microsoft 365 E5 （目前最高等级的授权，价值大约 5000元/年/人，总价值约 125000元/年）。
 
 {% embed url="https://docs.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program" %}
+
+成功申请后，可以通过 [https://developer.microsoft.com/zh-cn/microsoft-365/profile](https://developer.microsoft.com/zh-cn/microsoft-365/profile) 随时查看你的开发环境的信息。
+
+![](../.gitbook/assets/tu-pian-%20%28265%29.png)
+
+## 申请Azure 试用版
+
+在Microsoft Teams开发过程中，你可能会需要用到云服务器资源，用来部署你的应用。你可以完全自己的情况决定使用什么样的资源，但是如果使用Microsoft Azure可能会更加方便一些，尤其是在机器人开发这个部分。你可以尝试下面的链接获取免费的权益。
+
+{% embed url="https://azure.microsoft.com/zh-cn/free/" %}
+
+为了保证大家都能跟着本书
 
 
 
@@ -68,7 +80,7 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*
 
 在我的电脑上已经安装，会有如下的显示
 
-![](../.gitbook/assets/tu-pian-%20%28275%29.png)
+![](../.gitbook/assets/tu-pian-%20%28276%29.png)
 
 如果可以通过如下的命令进行安装
 
@@ -84,7 +96,7 @@ ssh -R 80:localhost:3000 localhost.run
 
 很快你看到如下的输出，表示创建隧道成功了
 
-![](../.gitbook/assets/tu-pian-%20%28266%29.png)
+![](../.gitbook/assets/tu-pian-%20%28267%29.png)
 
 访问这个https的地址，它会把请求转发到本地的网页。
 

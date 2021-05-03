@@ -16,7 +16,7 @@
 
 Microsoft 365全局管理员，或者指定的Power Platform管理员有权访问 "Power Platform管理中心“。
 
-![](../.gitbook/assets/tu-pian-%20%28268%29.png)
+![](../.gitbook/assets/tu-pian-%20%28269%29.png)
 
 Power Platform 管理中心访问地址是 [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)。
 
@@ -24,11 +24,11 @@ Power Platform 管理中心访问地址是 [https://admin.powerplatform.microsof
 
 在Power Platform中，有一个重要的概念是环境，在环境中，可以定义数据库（一个或多个），这些数据在应用和流程中共享。 PowerApps 和 PowerAutomate ，Power Virtual Agents 都是以环境作为边界的。例如用户需要创建一个PowerApps的应用，它必须属于且只能属于一个环境。
 
-![](../.gitbook/assets/tu-pian-%20%28265%29.png)
+![](../.gitbook/assets/tu-pian-%20%28266%29.png)
 
 针对环境的配置很关键，请你一定要花一些时间进行研究和学习。
 
-![](../.gitbook/assets/tu-pian-%20%28271%29.png)
+![](../.gitbook/assets/tu-pian-%20%28272%29.png)
 
 作为管理员，你还需要特别关注容量的使用量，你可能需要考虑单独购买容量来满足员工的使用需求。
 
