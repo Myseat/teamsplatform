@@ -12,7 +12,7 @@ Microsoft Teams是拥有数亿用户的平台，通过
 
 ## 成为Microsoft Teams市场合作伙伴
 
-![](../.gitbook/assets/tu-pian-%20%28276%29.png)
+![](../.gitbook/assets/tu-pian-%20%28277%29.png)
 
 
 

@@ -46,7 +46,7 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*
 
 在我的电脑上已经安装，会有如下的显示
 
-![](../.gitbook/assets/tu-pian-%20%28274%29.png)
+![](../.gitbook/assets/tu-pian-%20%28275%29.png)
 
 如果可以通过如下的命令进行安装
 
