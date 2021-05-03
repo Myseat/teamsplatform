@@ -37,6 +37,7 @@
   * [应用权限策略配置](it-prespective-of-the-platform/app-permission-policy.md)
   * [应用设置策略](it-prespective-of-the-platform/app-setup-policy.md)
   * [定义和分发团队模板](it-prespective-of-the-platform/define-team-template.md)
+  * [使用PowerShell 创建和管理团队](it-prespective-of-the-platform/automation-with-powershell.md)
   * [使用量分析](it-prespective-of-the-platform/usage-analytics.md)
   * [发布和管理企业应用](it-prespective-of-the-platform/publish-org-apps.md)
   * [Power Platform的管理](it-prespective-of-the-platform/power-platform-managment.md)
