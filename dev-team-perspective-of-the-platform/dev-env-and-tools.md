@@ -4,7 +4,13 @@ description: 工欲善其事，必先利其器
 
 # 开发环境和工具
 
-## 申请开发者账号
+## 申请Microsoft 365开发者账号
+
+只要你有Microsoft 365的账号，哪怕是普通用户账号，其实就能进行Teams的开发。但是如果想要获得最完整的体验，包括管理员配置，服务接口调用等。你最好有一个用来做开发测试的账号或环境。
+
+你可以通过 
+
+{% embed url="https://docs.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program" %}
 
 
 
