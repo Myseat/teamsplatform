@@ -27,7 +27,7 @@ New-Team -DisplayName "管理团队" -Description "通过PowerShell创建的团�
 
 该命令会创建一个团队，并返回如下结果。请注意，默认团队是私有的。
 
-![](../.gitbook/assets/tu-pian-%20%28289%29.png)
+![](../.gitbook/assets/tu-pian-%20%28290%29.png)
 
 如果你想看这个团队的更多信息，可以用如下的命令。
 
@@ -35,7 +35,7 @@ New-Team -DisplayName "管理团队" -Description "通过PowerShell创建的团�
 
 每个团队都有一个默认的频道，英文叫General，中文叫常规。
 
-![](../.gitbook/assets/tu-pian-%20%28290%29.png)
+![](../.gitbook/assets/tu-pian-%20%28291%29.png)
 
 ### 创建频道
 
@@ -71,12 +71,22 @@ $team | Add-TeamUser -User panda@code365.xyz
 Add-TeamUser -GroupId a2924e77-383a-4159-b231-0a3850f588eb -User tiger@code365.xyz
 ```
 
-以上是把用户添加到团队, 如果需要将用户添加到私有频道, 你需要安装预览版的PowerShell模块
+以上是把用户添加到团队, 如果需要将用户添加到私有频道, 你需要安装**预览版的PowerShell模块**
+
+{% hint style="warning" %}
+请注意, 安装多个版本可能会导致一些奇怪的问题. 我的做法是: 在PowerShell 7.1.x 这个最新版本PowerShell \(黑色\) 中安装正式版的模块, 在老的PowerShell \(蓝色, 版本号为5.1\) 中安装预览版.
+{% endhint %}
 
 ```text
 # 安装预览版的模块
-Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "1.1.9-preview"
+Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "2.2.0-preview"
 ```
+
+请看清楚下面这个是我的蓝色PowerShell窗口
+
+![](../.gitbook/assets/tu-pian-%20%28288%29.png)
+
+
 
 ### 为频道安装应用
 

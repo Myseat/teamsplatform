@@ -160,11 +160,11 @@ ngrok http --host-header=rewrite 3000
 
 这个工具会生成两个地址，可供外网访问。
 
-![](../.gitbook/assets/tu-pian-%20%28292%29.png)
+![](../.gitbook/assets/tu-pian-%20%28293%29.png)
 
 另外，还有一个后台网站可以查看访问的情况，包括请求和响应的细节。请通过 http://127.0.0.1:4040 访问这个网站即可。
 
-![](../.gitbook/assets/tu-pian-%20%28288%29.png)
+![](../.gitbook/assets/tu-pian-%20%28289%29.png)
 
 {% hint style="info" %}
 ngrok 在绝大部分时候都能完美工作，但有时候可能访问有点问题，此时可以尝试localhost.run这个方案。
