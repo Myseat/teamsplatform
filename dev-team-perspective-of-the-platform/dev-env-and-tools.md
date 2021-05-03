@@ -47,6 +47,12 @@ description: 工欲善其事，必先利其器
 
 {% embed url="https://docs.microsoft.com/zh-cn/microsoftteams/platform/concepts/build-and-test/app-studio-overview" %}
 
+## Node.js
+
+Node.js® 是一个基于 Chrome V8 引擎 的 JavaScript 运行时，本书的部分案例会基于Node.js开发，你需要提前安装。
+
+请通过 [https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/) 进行下载安装。
+
 ## Visual Studio Code
 
 Visual Studio Code是新一代的代码编辑器，跨平台并且开源，轻量级，扩展性非常强，在全世界范围内都很受欢迎。它也是我们用来做Teams应用开发的主要工具。
