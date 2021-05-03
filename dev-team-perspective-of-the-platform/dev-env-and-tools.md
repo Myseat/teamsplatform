@@ -4,7 +4,9 @@ description: 工欲善其事，必先利其器
 
 # 开发环境和工具
 
-## 申请Microsoft 365开发者账号
+这一节列出了基于Microsoft Teams平台进行应用开发所需要的环境和工具。
+
+## Microsoft 365开发者账号
 
 只要你有Microsoft 365的账号，哪怕是普通用户账号，其实就能进行Teams的开发。但是如果想要获得最完整的体验，包括管理员配置，服务接口调用等。你最好有一个用来做开发测试的账号或环境。
 
@@ -16,23 +18,72 @@ description: 工欲善其事，必先利其器
 
 ![](../.gitbook/assets/tu-pian-%20%28265%29.png)
 
-## 申请Azure 试用版
+## Microsoft Azure 试用版 【可选】
+
+{% hint style="info" %}
+为了保证大家都能跟着本书做练习，本书所有例子并不依赖Azure，将全部能够在本地开发环境运行并调试。
+{% endhint %}
 
 在Microsoft Teams开发过程中，你可能会需要用到云服务器资源，用来部署你的应用。你可以完全自己的情况决定使用什么样的资源，但是如果使用Microsoft Azure可能会更加方便一些，尤其是在机器人开发这个部分。你可以尝试下面的链接获取免费的权益。
 
 {% embed url="https://azure.microsoft.com/zh-cn/free/" %}
 
-为了保证大家都能跟着本书
-
-
-
 ## AppStudio
+
+作为Microsoft Teams 开发者，你可以通过官方提供的App Studio 进行应用程序定义，安装和发布。这个工具本身就是一个Teams应用，你可以在应用市场中搜索并安装它。
+
+![](../.gitbook/assets/tu-pian-%20%28277%29.png)
+
+这个工具的界面是英文的，分别具有如下的功能
+
+1. Manifest editor，这是用的最多的功能。你可以通过这里创建或导入应用，并且对其具体的功能进行定义。你还可以在这里管理机器人的信息。
+2. Validation，这个功能用来对你定义的应用进行验证。
+3. Card editor，在Teams应用中会经常用到自适应卡片，通过这个编辑器可以进行定义。
+4. UI Tools，帮助开发者理解和使用官方提供的UI工具。
+
+![](../.gitbook/assets/tu-pian-%20%28266%29.png)
+
+以上功能的详细操作，请参考
+
+{% embed url="https://docs.microsoft.com/zh-cn/microsoftteams/platform/concepts/build-and-test/app-studio-overview" %}
 
 ## Visual Studio Code
 
+Visual Studio Code是新一代的代码编辑器，跨平台并且开源，轻量级，扩展性非常强，在全世界范围内都很受欢迎。它也是我们用来做Teams应用开发的主要工具。
 
+你可以通过 [https://code.visualstudio.com/](https://code.visualstudio.com/) 下载和安装。
 
-## Visual Studio 2019 + 
+### 安装中文语言包
+
+VS code默认没有提供多语言的安装包，但你可以很容易地以插件的形式安装你需要的语言包。例如下面这个是中文简体语言包。
+
+![](../.gitbook/assets/tu-pian-%20%28268%29.png)
+
+安装后需要重启VS Code生效。
+
+{% hint style="info" %}
+你也可以通过命令行安装此插件 
+
+```text
+code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
+```
+{% endhint %}
+
+### Microsoft Teams Toolkit for VS Code
+
+你还可以安装Microsoft Teams Toolkit来加速Teams 应用开发，本书中的选项卡应用，我将采用这个Toolkit来生成和调试。
+
+![](../.gitbook/assets/tu-pian-%20%28276%29.png)
+
+{% hint style="info" %}
+你也可以通过命令行安装此插件 
+
+```text
+code --install-extension TeamsDevApp.ms-teams-vscode-extension
+```
+{% endhint %}
+
+## Visual Studio 2019 
 
 ## 
 
@@ -80,7 +131,7 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*
 
 在我的电脑上已经安装，会有如下的显示
 
-![](../.gitbook/assets/tu-pian-%20%28276%29.png)
+![](../.gitbook/assets/tu-pian-%20%28280%29.png)
 
 如果可以通过如下的命令进行安装
 
@@ -96,7 +147,7 @@ ssh -R 80:localhost:3000 localhost.run
 
 很快你看到如下的输出，表示创建隧道成功了
 
-![](../.gitbook/assets/tu-pian-%20%28267%29.png)
+![](../.gitbook/assets/tu-pian-%20%28269%29.png)
 
 访问这个https的地址，它会把请求转发到本地的网页。
 
