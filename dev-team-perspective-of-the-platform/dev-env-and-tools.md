@@ -53,6 +53,10 @@ Node.js® 是一个基于 Chrome V8 引擎 的 JavaScript 运行时，本书的�
 
 请通过 [https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/) 进行下载安装。
 
+## .NET Core SDK
+
+.NET Core是一个全新的开源框架，支持
+
 ## Visual Studio Code
 
 Visual Studio Code是新一代的代码编辑器，跨平台并且开源，轻量级，扩展性非常强，在全世界范围内都很受欢迎。它也是我们用来做Teams应用开发的主要工具。
@@ -75,23 +79,17 @@ code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
 ```
 {% endhint %}
 
-### Microsoft Teams Toolkit for VS Code
+### 安装 Microsoft Teams Toolkit for VS Code
 
-你还可以安装Microsoft Teams Toolkit来加速Teams 应用开发，本书中的选项卡应用，我将采用这个Toolkit来生成和调试。
+你还可以安装Microsoft Teams Toolkit来加速Teams 应用开发，本书中的选项卡应用，我将采用这个Toolkit来生成和调试。你可以通过如下方式或 `code --install-extension TeamsDevApp.ms-teams-vscode-extension` 这一句命令安装。
 
 ![](../.gitbook/assets/tu-pian-%20%28276%29.png)
 
-{% hint style="info" %}
-你也可以通过命令行安装此插件 
+### 安装 C\# 插件
 
-```text
-code --install-extension TeamsDevApp.ms-teams-vscode-extension
-```
-{% endhint %}
+在本书演示项目中，C\#用来开发机器人，默认情况下VS Code并没有安装C\#，你可以通过如下方式安装或者 `code --install-extension ms-dotnettools.csharp` 这一句命令来安装它。
 
-## Visual Studio 2019 
-
-## 
+![](../.gitbook/assets/tu-pian-%20%28278%29.png)
 
 ## 安装PowerShell
 
@@ -101,6 +99,12 @@ code --install-extension TeamsDevApp.ms-teams-vscode-extension
 
 ```text
 Install-Module MicrosoftTeams,Microsoft.Graph,Az
+```
+
+你可能还需要一个PowerShell编辑器，我这里仍然推荐用VS Code，你可以通过下面一句命令安装PowerShell扩展。
+
+```text
+code --install-extension ms-vscode.powershell
 ```
 
 ## 为本地开发提供外网https访问支持
