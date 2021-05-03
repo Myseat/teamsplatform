@@ -85,11 +85,7 @@ New-CsTeamTemplate
 
 ![](../.gitbook/assets/tu-pian-%20%28199%29.png)
 
-
-
-
-
-
+## 使用PowerShell 创建和管理团队
 
 
 
