@@ -1,3 +1,7 @@
+---
+description: 开发合作创造更好的未来
+---
+
 # 从开发团队角度看平台
 
 Microsoft Teams是拥有数亿用户的平台，通过你已经熟悉的技术和框架，一方面可以很容易地把现有的业务应用集成到Teams里面来，也可以把Teams的现有能力整合到你的外部系统中。
@@ -14,6 +18,8 @@ Microsoft Teams是拥有数亿用户的平台，通过你已经熟悉的技术�
 
 ## 应用的组成
 
+开发者通过应用（Teams App）来分发并解决用户或客户遇到的问题或业务需求。在逻辑上，一个Teams 应用也包含了两大部分，
+
 
 
 ## 成为Microsoft Teams认证开发者
@@ -23,6 +29,8 @@ Microsoft Teams是拥有数亿用户的平台，通过你已经熟悉的技术�
 ![](../.gitbook/assets/tu-pian-%20%28283%29.png)
 
 ## 成为Microsoft Teams市场合作伙伴
+
+
 
 ![](../.gitbook/assets/tu-pian-%20%28285%29.png)
 
