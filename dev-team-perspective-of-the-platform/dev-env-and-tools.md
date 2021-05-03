@@ -18,6 +18,10 @@ description: 工欲善其事，必先利其器
 
 ![](../.gitbook/assets/tu-pian-%20%28265%29.png)
 
+{% hint style="warning" %}
+请注意，这个开发环境不是永久的，一般是半年授权，然后根据你在此环境中是否真的进行了相关的应用开发，决定是否能续期。你不能把它当作生产环境使用，你的重要资料也不建议保存在这个环境中。
+{% endhint %}
+
 ## Microsoft Azure 试用版 【可选】
 
 {% hint style="info" %}
@@ -28,7 +32,7 @@ description: 工欲善其事，必先利其器
 
 {% embed url="https://azure.microsoft.com/zh-cn/free/" %}
 
-## AppStudio
+## App Studio
 
 作为Microsoft Teams 开发者，你可以通过官方提供的App Studio 进行应用程序定义，安装和发布。这个工具本身就是一个Teams应用，你可以在应用市场中搜索并安装它。
 
@@ -55,7 +59,19 @@ Node.js® 是一个基于 Chrome V8 引擎 的 JavaScript 运行时，本书的�
 
 ## .NET Core SDK
 
-.NET Core是一个全新的开源框架，支持
+.NET Core是一个全新的开源框架，支持C\#, VB.NET, F\#三种语言进行开发，既能开发桌面应用，也能开发网页、物联网应用，甚至可以说是全栈开发平台。它运行速度极快，并且可以部署到多个平台上面运行。
+
+你需要通过这里（[https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)）安装最新的.NET Core SDK。本书中的机器人范例，将基于.NET Core SDK来开发。所以请提前安装如下的项目模板。
+
+```text
+dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot
+dotnet new -i Microsoft.Bot.Framework.CSharp.CoreBot
+dotnet new -i Microsoft.Bot.Framework.CSharp.EmptyBot
+```
+
+## Bot Framework Emulator
+
+
 
 ## Visual Studio Code
 
@@ -89,7 +105,19 @@ code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
 
 在本书演示项目中，C\#用来开发机器人，默认情况下VS Code并没有安装C\#，你可以通过如下方式安装或者 `code --install-extension ms-dotnettools.csharp` 这一句命令来安装它。
 
-![](../.gitbook/assets/tu-pian-%20%28278%29.png)
+![](../.gitbook/assets/tu-pian-%20%28282%29.png)
+
+## Azure Functions Tool
+
+Azure Functions 是一个非常有价值的无服务器（Serverless）解决方案，本书中会用它来实现选项卡项目中的服务API，简化开发。请注意，我将使用它的本地开发功能，并不需要部署到Azure。
+
+首先，请安装Azure Functions Core Tools
+
+{% embed url="https://docs.microsoft.com/zh-cn/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash\#version-3x-and-2x" %}
+
+然后，通过如下方式或`code --install-extension ms-azuretools.vscode-azurefunctions` 命令安装在VS Code中的Azure Functions 插件
+
+![](../.gitbook/assets/tu-pian-%20%28272%29.png)
 
 ## 安装PowerShell
 
@@ -111,9 +139,12 @@ code --install-extension ms-vscode.powershell
 
 这个说起来有点绕，其实很好理解。本地开发是指开发人员在自己的电脑上面开发，但并没有发布到真正的服务器或者云平台，所以这个应用是无法在外网访问到的。
 
-Microsoft Teams 在定义应用包时，要求这些
+Microsoft Teams 在定义应用包（Teams App Package）时，针对不同的应用会要求提供一个或者多个地址，而这些地址，有如下的要求
 
+1. 该地址要能被外网访问到，而不是`http://localhost` 这样的地址。
+2. 该地址要求用https来提供服务。
 
+为了解决这样的问题，现在有一些第三方方案。我经常使用的有下面两个：ngrok 或 localhost.run，他们都有免费的服务，请按需使用。
 
 ### 使用 ngrok 提供本地隧道功能
 
@@ -166,4 +197,10 @@ ssh -R 80:localhost:3000 localhost.run
 {% hint style="warning" %}
 请注意，免费版的地址是随机生成的。如果你需要固定的地址，请访问 https://admin.localhost.run 进行设置。
 {% endhint %}
+
+## Postman 【可选】
+
+我还很喜欢用Postman来做API 的调试，如果你也有兴趣，请通过这里（[https://www.postman.com/downloads/](https://www.postman.com/downloads/)）进行安装。目前这个工具只有中文版。
+
+![](../.gitbook/assets/tu-pian-%20%28271%29.png)
 

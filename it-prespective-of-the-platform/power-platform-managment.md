@@ -16,7 +16,7 @@
 
 Microsoft 365全局管理员，或者指定的Power Platform管理员有权访问 "Power Platform管理中心“。
 
-![](../.gitbook/assets/tu-pian-%20%28271%29.png)
+![](../.gitbook/assets/tu-pian-%20%28274%29.png)
 
 Power Platform 管理中心访问地址是 [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)。
 
@@ -28,7 +28,7 @@ Power Platform 管理中心访问地址是 [https://admin.powerplatform.microsof
 
 针对环境的配置很关键，请你一定要花一些时间进行研究和学习。
 
-![](../.gitbook/assets/tu-pian-%20%28274%29.png)
+![](../.gitbook/assets/tu-pian-%20%28281%29.png)
 
 作为管理员，你还需要特别关注容量的使用量，你可能需要考虑单独购买容量来满足员工的使用需求。
 
