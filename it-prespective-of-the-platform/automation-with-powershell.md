@@ -27,7 +27,7 @@ New-Team -DisplayName "管理团队" -Description "通过PowerShell创建的团�
 
 该命令会创建一个团队，并返回如下结果。请注意，默认团队是私有的。
 
-![](../.gitbook/assets/tu-pian-%20%28291%29.png)
+![](../.gitbook/assets/tu-pian-%20%28293%29.png)
 
 如果你想看这个团队的更多信息，可以用如下的命令。
 
@@ -35,7 +35,7 @@ New-Team -DisplayName "管理团队" -Description "通过PowerShell创建的团�
 
 每个团队都有一个默认的频道，英文叫General，中文叫常规。
 
-![](../.gitbook/assets/tu-pian-%20%28292%29.png)
+![](../.gitbook/assets/tu-pian-%20%28294%29.png)
 
 ### 创建频道
 
@@ -116,7 +116,7 @@ New-AzureADMSInvitation -InvitedUserDisplayName "陈希章" -InvitedUserEmailAdd
 
 受你邀请的用户会收到一封邮件通知。如果他已经有Teams账号，直接点击邮件中的“Accept invitation”按钮就可以进入对应的团队（你需要尽快用脚本将其添加到团队），否则的话，他会被引导一个页面，要求他创建一个Microsoft Account（用同样的邮箱地址），然后加入该团队。
 
-![](../.gitbook/assets/tu-pian-%20%28293%29.png)
+![](../.gitbook/assets/tu-pian-%20%28296%29.png)
 
 无论如何，只要创建了这个邀请，就可以像正常的用户那样添加到团队了。例如：
 
@@ -130,19 +130,65 @@ Add-TeamUser -GroupId a2924e77-383a-4159-b231-0a3850f588eb -User code365@xizhang
 
 ### 为频道安装选项卡应用
 
-目前无法直接通过MicrosoftTeams这个模块提供的命令为频道安装应用，但是可以通过Microsoft Graph接口来实现，下面是一个范例，我希望在 “技术委员会”这个频道中添加一个 “Excel”的选项卡, 并且把某个文档通过这个选项卡打开。
+目前无法直接通过MicrosoftTeams这个模块提供的命令为频道安装应用，但是可以通过Microsoft Graph接口来实现，你可以先看一下这个文档，了解一下所需要的权限，以及典型用法。
+
+{% embed url="https://docs.microsoft.com/zh-cn/graph/api/channel-post-tabs?view=graph-rest-1.0" %}
+
+下面是一个范例，我希望在 “技术委员会”这个频道中添加一个 “Excel”的选项卡, 并且把某个文档通过这个选项卡打开。
 
 我们首先要知道Excel这个应用的编号是什么。
 
 ```text
-Get-TeamsApp -DisplayName Excel
+$appId = (Get-TeamsApp -DisplayName Excel).Id
 ```
 
 通过查询得到这个应用的Id 是`com.microsoft.teamspace.tab.file.staticviewer.excel`
 
-![](../.gitbook/assets/tu-pian-%20%28294%29.png)
+另外还需要查询得到你要操作的团队和频道的编号。
 
+```text
+$teamId = (Get-Team -DisplayName 管理团队).GroupId
+$channelId = (Get-TeamChannel -GroupId $teamId | Where-Object {$_.DisplayName -eq "技术委员会"}).Id
+```
 
+请确保安装了Microsoft.Graph这个模块，接下来我们连接到Microsoft Graph
+
+```text
+Connect-Graph -Scope 
+```
+
+请按照提示完成身份认证和授权
+
+![](../.gitbook/assets/tu-pian-%20%28295%29.png)
+
+接下来是核心步骤了，通过Invoke-GraphReqeust 来完成请求。
+
+```text
+# 准备要提交给服务器的数据
+$body =@"                                                                               
+{
+	"displayName":"销售报表",
+	"teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/$appId",
+	"configuration":{
+		"entityId":"B8D9D4E1-78DD-4231-B6E8-7D923EA732CD",			
+		"contentUrl":"https://chinateamscommunity.sharepoint.com/sites/msteams_b5a289/Shared Documents/General/Sales.xlsx",
+		"websiteUrl":null,
+		"removeUrl":null
+}}
+"@
+
+# 构建要请求的服务器API地址
+$url = "https://graph.microsoft.com/v1.0/teams/$teamId/channels/$channelId/tabs"
+
+# 发起请求
+Invoke-GraphRequest -Method POST -Uri $url -Body $body -ContentType "application/json; charset=utf-8"
+```
+
+![](../.gitbook/assets/tu-pian-%20%28290%29.png)
+
+回到团队中我们可以看到这个Excel文件已经添加到当前的频道。
+
+![](../.gitbook/assets/tu-pian-%20%28292%29.png)
 
 ### 其他操作
 
@@ -152,7 +198,7 @@ Get-TeamsApp -DisplayName Excel
 Get-Command -Module microsoftteams | Where-Object {$_.Name -notlike "*-Cs*"}
 ```
 
-![](../.gitbook/assets/tu-pian-%20%28290%29.png)
+![](../.gitbook/assets/tu-pian-%20%28291%29.png)
 
 如果对某个命令感兴趣，但不知道怎么使用，请通过如下的方式查看帮助
 
