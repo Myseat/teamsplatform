@@ -69,10 +69,6 @@ dotnet new -i Microsoft.Bot.Framework.CSharp.CoreBot
 dotnet new -i Microsoft.Bot.Framework.CSharp.EmptyBot
 ```
 
-## Bot Framework Emulator
-
-
-
 ## Visual Studio Code
 
 Visual Studio Code是新一代的代码编辑器，跨平台并且开源，轻量级，扩展性非常强，在全世界范围内都很受欢迎。它也是我们用来做Teams应用开发的主要工具。
@@ -144,7 +140,7 @@ Microsoft Teams 在定义应用包（Teams App Package）时，针对不同的�
 1. 该地址要能被外网访问到，而不是`http://localhost` 这样的地址。
 2. 该地址要求用https来提供服务。
 
-为了解决这样的问题，现在有一些第三方方案。我经常使用的有下面两个：ngrok 或 localhost.run，他们都有免费的服务，请按需使用。
+为了解决这样的问题，现在有一些第三方方案。我经常使用的有下面两个：ngrok （优先） 或 localhost.run，他们都有免费的服务，请按需使用。
 
 ### 使用 ngrok 提供本地隧道功能
 
@@ -156,11 +152,21 @@ ngrok 有免费版和收费版，也有多种安装方式。请参考这里的�
 npm install -g ngrok
 ```
 
-这样做的好处就是可以直接用 ngrok 命令
+这样做的好处就是可以直接用 ngrok 命令，最常见的用法是这样
+
+```text
+ngrok http --host-header=rewrite 3000
+```
+
+
+
+{% hint style="info" %}
+ngrok有时候可能访问有点问题，此时可以尝试localhost.run这个方案。
+{% endhint %}
 
 ### 使用 localhost.run 提供本地隧道功能
 
-ngrok很不错，但我还发现另外一个更加轻量级的方案（localhost.run\)， 它有永久免费的版本，甚至不需要安装专门的客户端，而是使用标准的SSH 客户端即可。
+ngrok很不错（而且很强大），但我还发现另外一个更加轻量级的方案（localhost.run\)， 它有永久免费的版本，甚至不需要安装专门的客户端，而是使用标准的SSH 客户端即可。
 
 首先请 参考 [https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh\_install\_firstuse](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse) 的说明，在Windows 10中启用自带的OpenSSH 客户端。
 
