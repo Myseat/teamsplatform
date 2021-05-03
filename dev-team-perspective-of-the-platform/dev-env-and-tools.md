@@ -46,7 +46,7 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*
 
 在我的电脑上已经安装，会有如下的显示
 
-![](../.gitbook/assets/tu-pian-%20%28270%29.png)
+![](../.gitbook/assets/tu-pian-%20%28274%29.png)
 
 如果可以通过如下的命令进行安装
 
@@ -62,11 +62,11 @@ ssh -R 80:localhost:3000 localhost.run
 
 很快你看到如下的输出，表示创建隧道成功了
 
-![](../.gitbook/assets/tu-pian-%20%28264%29.png)
+![](../.gitbook/assets/tu-pian-%20%28266%29.png)
 
 访问这个https的地址，它会把请求转发到本地的网页。
 
-![](../.gitbook/assets/tu-pian-%20%28260%29.png)
+![](../.gitbook/assets/tu-pian-%20%28261%29.png)
 
 {% hint style="warning" %}
 请注意，免费版的地址是随机生成的。如果你需要固定的地址，请访问 https://admin.localhost.run 进行设置。
