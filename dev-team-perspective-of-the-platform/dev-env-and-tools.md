@@ -1,10 +1,22 @@
+---
+description: 工欲善其事，必先利其器
+---
+
 # 开发环境和工具
 
-本节内容正在编写，敬请期待，您也可以订阅更新以便收到通知，或者基于现有内容提供反馈
+## 申请开发者账号
 
 
 
+## AppStudio
 
+## Visual Studio Code
+
+
+
+## Visual Studio 2019 + 
+
+## 
 
 ## 安装PowerShell
 
@@ -16,11 +28,15 @@
 Install-Module MicrosoftTeams,Microsoft.Graph,Az
 ```
 
-## 创建开发证书提供https支持
+## 为本地开发提供外网https访问支持
+
+这个说起来有点绕，其实很好理解。本地开发是指开发人员在自己的电脑上面开发，但并没有发布到真正的服务器或者云平台，所以这个应用是无法在外网访问到的。
+
+Microsoft Teams 在定义应用包时，要求这些
 
 
 
-## 使用 ngrok 提供本地隧道功能
+### 使用 ngrok 提供本地隧道功能
 
 在很多微软的官方文档中都提到了 `ngrok` 这个工具，这可能是目前用的最广泛的一个将本地网站发布到外网，并且默认提供https支持的服务。它的官方网站是 [https://ngrok.com/](https://ngrok.com/) 。
 
@@ -32,7 +48,7 @@ npm install -g ngrok
 
 这样做的好处就是可以直接用 ngrok 命令
 
-## 使用 localhost.run 提供本地隧道功能
+### 使用 localhost.run 提供本地隧道功能
 
 ngrok很不错，但我还发现另外一个更加轻量级的方案（localhost.run\)， 它有永久免费的版本，甚至不需要安装专门的客户端，而是使用标准的SSH 客户端即可。
 
